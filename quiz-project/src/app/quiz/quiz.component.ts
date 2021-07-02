@@ -47,6 +47,7 @@ export class QuizComponent implements OnInit {
     this.answers[this.current] = index
     console.log(this.answers)
   }
+
   ngOnInit(): void {
   }
 

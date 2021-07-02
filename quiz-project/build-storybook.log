@@ -1,0 +1,203 @@
+yarn run v1.22.5
+warning ..\..\..\..\package.json: No license field
+$ compodoc -p ./tsconfig.json -e json -d .
+[0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+
+1.1.11
+
+TypeScript version used by Compodoc : 2.9.1
+
+TypeScript version of current project : 4.2.3
+
+Node.js version : v14.17.1
+
+Operating system : Windows 10
+
+[[90m10:11:09[39m] No configuration file found, switching to CLI flags.
+[[90m10:11:09[39m] Using tsconfig file : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\tsconfig.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.browserslistrc
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.editorconfig
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.gitignore
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\angular.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\documentation.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\build-storybook.log
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\karma.conf.js
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\package-lock.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\package.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\README.md
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\tsconfig.app.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\tsconfig.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\tsconfig.spec.json
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\yarn.lock
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook\main.js
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook\preview.js
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook\tsconfig.json
+[[90m10:11:09[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook\typings.d.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\favicon.ico
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\index.html
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\main.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\polyfills.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\styles.scss
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\test.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\assets\.gitkeep
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\app-routing.module.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\app.component.html
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\app.component.scss
+[[90m10:11:09[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\app.component.spec.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\app.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\app.module.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\environments\environment.prod.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\environments\environment.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\button.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\button.css
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\Button.stories.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\header.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\header.css
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\Header.stories.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\Introduction.stories.mdx
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\page.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\page.css
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\Page.stories.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\question\question.component.html
+[[90m10:11:09[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\question\question.component.spec.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\question\question.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\quiz\quiz.component.html
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\quiz\quiz.component.scss
+[[90m10:11:09[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\quiz\quiz.component.spec.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\quiz\quiz.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\results\results.component.html
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\results\results.component.scss
+[[90m10:11:09[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\results\results.component.spec.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\code-brackets.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\colors.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\comments.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\direction.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\flow.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\plugin.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\repo.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\stories\assets\stackalt.svg
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\results\results.component.ts
+[[90m10:11:09[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\src\app\question\question.component.scss
+[[90m10:11:09[39m] Searching package.json file
+[[90m10:11:09[39m] package.json file found
+[[90m10:11:09[39m] Processing package.json dependencies
+[[90m10:11:09[39m] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[[90m10:11:09[39m] README.md file found
+[[90m10:11:09[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\CHANGELOG read
+[[90m10:11:09[39m] Continuing without CHANGELOG.md file
+[[90m10:11:09[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\CONTRIBUTING read
+[[90m10:11:09[39m] Continuing without CONTRIBUTING.md file
+[[90m10:11:09[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\LICENSE read
+[[90m10:11:09[39m] Continuing without LICENSE.md file
+[[90m10:11:09[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\TODO read
+[[90m10:11:09[39m] Continuing without TODO.md file
+[[90m10:11:09[39m] Get dependencies data
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/main.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/polyfills.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/test.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/app/app-routing.module.ts
+[[90m10:11:09[39m] Analysing routes definitions and clean them if necessary
+[[90m10:11:09[39m] found          : AppRoutingModule
+[[90m10:11:09[39m]                : - imports:
+[[90m10:11:09[39m]                : 	- RouterModule
+[[90m10:11:09[39m]                : - exports:
+[[90m10:11:09[39m]                : 	- RouterModule
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/app/app.component.ts
+[[90m10:11:09[39m] found          : AppComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/app/app.module.ts
+[[90m10:11:09[39m] found          : AppModule
+[[90m10:11:09[39m]                : - imports:
+[[90m10:11:09[39m]                : 	- BrowserModule
+[[90m10:11:09[39m]                : 	- AppRoutingModule
+[[90m10:11:09[39m]                : - declarations:
+[[90m10:11:09[39m]                : 	- AppComponent
+[[90m10:11:09[39m]                : 	- QuestionComponent
+[[90m10:11:09[39m]                : 	- QuizComponent
+[[90m10:11:09[39m]                : 	- ResultsComponent
+[[90m10:11:09[39m]                : - bootstrap:
+[[90m10:11:09[39m]                : 	- AppComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/environments/environment.prod.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/environments/environment.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/stories/button.component.ts
+[[90m10:11:09[39m] found          : ButtonComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/stories/Button.stories.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/stories/header.component.ts
+[[90m10:11:09[39m] found          : HeaderComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/stories/Header.stories.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/stories/page.component.ts
+[[90m10:11:09[39m] found          : PageComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/stories/Page.stories.ts
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/app/question/question.component.ts
+[[90m10:11:09[39m] found          : QuestionComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/app/quiz/quiz.component.ts
+[[90m10:11:09[39m] found          : QuizComponent
+[[90m10:11:09[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/quiz-project/src/app/results/results.component.ts
+[[90m10:11:09[39m] found          : ResultsComponent
+[[90m10:11:09[39m] -------------------
+[[90m10:11:09[39m] Project statistics 
+[[90m10:11:09[39m] - files      : 58
+[[90m10:11:09[39m] - module     : 2
+[[90m10:11:09[39m] - component  : 7
+[[90m10:11:09[39m] -------------------
+[[90m10:11:09[39m] Prepare components
+[[90m10:11:09[39m]  AppComponent has a templateUrl, include it
+[[90m10:11:09[39m]  AppComponent has styleUrls, include them
+[[90m10:11:09[39m]  ButtonComponent has styleUrls, include them
+[[90m10:11:09[39m]  HeaderComponent has styleUrls, include them
+[[90m10:11:09[39m]  PageComponent has styleUrls, include them
+[[90m10:11:09[39m]  QuestionComponent has a templateUrl, include it
+[[90m10:11:09[39m]  QuestionComponent has styleUrls, include them
+[[90m10:11:09[39m]  QuizComponent has a templateUrl, include it
+[[90m10:11:09[39m]  QuizComponent has styleUrls, include them
+[[90m10:11:09[39m]  ResultsComponent has a templateUrl, include it
+[[90m10:11:09[39m]  ResultsComponent has styleUrls, include them
+[[90m10:11:09[39m] Prepare modules
+[[90m10:11:09[39m] Process routes
+[[90m10:11:09[39m] Prepare miscellaneous
+[[90m10:11:09[39m] Process documentation coverage report
+[[90m10:11:09[39m] Generating documentation in export format json
+[[90m10:11:09[39m] Documentation generated in ./ in 0.526 seconds
+Done in 2.73s.
+info @storybook/angular v6.3.2
+info 
+info => Cleaning outputDir: C:\Users\CLEVER~1\AppData\Local\Temp\chromatic--7284-FWz2dhoK3JoE
+info => Loading presets
+info => Compiling preview..
+info => Loading 1 config file in "C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook"
+info => Loading 9 other files in "C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook"
+info => Adding stories defined in "C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\.storybook\main.js"
+info => Found custom tsconfig.json
+info => Using implicit CSS loaders
+info => Loading angular-cli config
+info => Using angular project "quiz-project:build" for configuring Storybook
+info => Using angular-cli webpack config
+info => Using default Webpack4 setup
+ERR! WebpackOptionsValidationError: Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ERR!  - configuration.module.rules[9] has an unknown property 'mimetype'. These properties are valid:
+ERR!    object { compiler?, enforce?, exclude?, include?, issuer?, loader?, loaders?, oneOf?, options?, parser?, query?, realResource?, resolve?, resource?, resourceQuery?, rules?, sideEffects?, test?, type?, use? }
+ERR!    -> A rule
+ERR!     at webpack (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\webpack.js:31:9)
+ERR!     at Object.build (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\builder-webpack4\dist\cjs\index.js:179:18)
+ERR!     at async Promise.all (index 1)
+ERR!     at async buildStaticStandalone (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\core-server\dist\cjs\build-static.js:141:28)
+ERR!     at async Object.buildStatic (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\core-server\dist\cjs\build-static.js:161:5)
+ERR!  WebpackOptionsValidationError: Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ERR!  - configuration.module.rules[9] has an unknown property 'mimetype'. These properties are valid:
+ERR!    object { compiler?, enforce?, exclude?, include?, issuer?, loader?, loaders?, oneOf?, options?, parser?, query?, realResource?, resolve?, resource?, resourceQuery?, rules?, sideEffects?, test?, type?, use? }
+ERR!    -> A rule
+ERR!     at webpack (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\webpack.js:31:9)
+ERR!     at Object.build (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\builder-webpack4\dist\cjs\index.js:179:18)
+ERR!     at async Promise.all (index 1)
+ERR!     at async buildStaticStandalone (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\core-server\dist\cjs\build-static.js:141:28)
+ERR!     at async Object.buildStatic (C:\Users\Cleverton\Dev\UFRN\frameworks-front\quiz-project\node_modules\@storybook\core-server\dist\cjs\build-static.js:161:5)
