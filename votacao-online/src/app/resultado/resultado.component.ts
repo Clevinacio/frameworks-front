@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'resultado',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resultado.component.scss']
 })
 export class ResultadoComponent implements OnInit {
+  @Input()
+  opcoes!: string;
 
-  constructor() { }
+  @Input()
+  contador!: number;
 
   ngOnInit(): void {
   }

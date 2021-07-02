@@ -1,14 +1,13 @@
 <div class="container">
   <div class="question">
-    <h2>Pergunta um pouco maior para testar o espaçamento lore</h2>
+    <h2>{{pergunta}}</h2>
   </div>
-  <div class="options" *ngIf="mode === 'open'; else closed">
-    <cabine></cabine>
-    <button class="submitBtn" (click)="mode = 'closed'">Votar</button>
+  <div *ngIf="mode === 'open'; else closed">
+    <cabine [opcoes]="opcoes" (click)="result()"></cabine>
   </div>
 
   <ng-template #closed>
-    <div class="options">
+    <div>
       <resultado></resultado>
     </div>
   </ng-template>
