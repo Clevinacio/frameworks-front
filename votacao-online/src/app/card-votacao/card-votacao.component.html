@@ -3,12 +3,13 @@
     <h2>{{pergunta}}</h2>
   </div>
   <div *ngIf="mode === 'open'; else closed">
-    <cabine [opcoes]="opcoes" (click)="result()"></cabine>
+    <cabine [opcoes]="opcoes" (click)="onClick($event); result()">
+    </cabine>
   </div>
 
   <ng-template #closed>
     <div>
-      <resultado></resultado>
+      <resultado [opcoes]="opcoes" [totalCount]="totalVotes"></resultado>
     </div>
   </ng-template>
 

@@ -6,16 +6,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-votacao.component.scss']
 })
 export class CardVotacaoComponent implements OnInit {
-  pergunta = "Pergunta um pouco maior para testar o espaçamento lore"
+  pergunta = "Pergunta um pouco maior para testar o espaçamento"
   opcoes = [
-    'Sim',
-    'Não',
-    'Talvez'
+    {
+      opcao: 'Sim',
+      count: 6,
+    },
+    {
+      opcao: 'Não',
+      count: 5,
+    },
+    {
+      opcao: 'Talvez',
+      count: 3,
+    }
   ]
   mode: string = 'open';
-
+  totalVotes: number = 0;
   result() {
+    this.opcoes.forEach(opcao => {
+      this.totalVotes += opcao.count
+    });
     this.mode = 'closed';
+  }
+
+  onClick(index: number) {
+    this.opcoes[index].count += 1;
+    console.log(this.opcoes[index].count);
   }
 
   ngOnInit(): void {

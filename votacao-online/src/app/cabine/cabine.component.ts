@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'cabine',
@@ -6,9 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./cabine.component.scss']
 })
 export class CabineComponent implements OnInit {
-  @Input() titulo!: string;
-  @Input() opcoes!: string[];
-  @Input() selecao!: number;
+  @Input() opcoes!: any;
+  @Output() click = new EventEmitter<number>();
+
   ngOnInit(): void {
   }
 

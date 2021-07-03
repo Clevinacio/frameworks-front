@@ -7,10 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ResultadoComponent implements OnInit {
   @Input()
-  opcoes!: string;
+  opcoes!: any;
 
   @Input()
-  contador!: number;
+  totalCount!: number;
 
   ngOnInit(): void {
   }

@@ -6,8 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./results.component.scss']
 })
 export class ResultsComponent implements OnInit {
-  @Input() questions!: any;
-  @Input() answers!: any;
+  @Input()
+  questions!: any;
+
+  @Input()
+  answers!: any;
 
   constructor() { }
 

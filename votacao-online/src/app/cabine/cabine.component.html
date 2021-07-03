@@ -1,5 +1,5 @@
 <div class="options">
-  <button *ngFor="let opcao of opcoes; index as i">
-    {{opcao}}
+  <button *ngFor="let opcao of opcoes; index as i" (click)="click.emit(i)">
+    {{opcao.opcao}}
   </button>
 </div>
