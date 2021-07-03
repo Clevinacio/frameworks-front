@@ -3,30 +3,62 @@
     <div class="question">
       <h2>{{ pergunta }}</h2>
     </div>
-    <div>
-      <Cabine> </Cabine>
+
+    <div v-if="mode === 'open'">
+      <Cabine :opcoes="opcoes" @votar="resultado"> </Cabine>
     </div>
 
-    <!-- <ng-template>
-      <div>
-        <resultado [opcoes]="opcoes" [totalCount]="totalVotes"></resultado>
-      </div>
-    </ng-template> -->
+    <div v-else>
+      <Resultado :opcoes="opcoes" :totalCount="totalVotes"></Resultado>
+    </div>
   </div>
 </template>
 <script>
 import Cabine from "./Cabine";
+import Resultado from "./Resultado";
+
+const opcoes = [
+  {
+    opcao: "Sim",
+    count: 3,
+  },
+  {
+    opcao: "Não",
+    count: 7,
+  },
+  {
+    opcao: "Talvez",
+    count: 2,
+  },
+];
+
 export default {
   components: {
     Cabine,
+    Resultado,
   },
-  data: function () {
-    return {
-      pergunta: "Teste de pergunta Vue",
-    };
+  data: () => ({
+    pergunta: "Teste de pergunta Vue",
+    mode: "open",
+    totalVotes: 0,
+  }),
+  methods: {
+    resultado(index) {
+      this.opcoes[index].count += 1;
+      this.opcoes.forEach((opcao) => {
+        this.totalVotes += opcao.count;
+      });
+      this.mode = "closed";
+    },
+  },
+  computed: {
+    opcoes() {
+      return opcoes;
+    },
   },
 };
 </script>
+
 <style lang="scss">
 .container {
   margin: 100px auto;
@@ -48,18 +80,8 @@ export default {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     width: 100%;
-    color: rgb(255, 251, 251);
-    margin: 20px;
+    color: #2c3e50;
     align-self: center;
   }
 }
-
-// .content{
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   margin: 0 auto;
-//   align-self: center;
-//   justify-content: center;
-// }
 </style>

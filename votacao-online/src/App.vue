@@ -1,16 +1,16 @@
 <template>
-  <CardVotacao/>
+  <CardVotacao />
 </template>
 
 <script>
-import CardVotacao from './components/CardVotacao.vue'
+import CardVotacao from "./components/CardVotacao.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    CardVotacao
-  }
-}
+    CardVotacao,
+  },
+};
 </script>
 
 <style>
@@ -18,7 +18,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }

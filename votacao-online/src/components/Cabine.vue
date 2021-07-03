@@ -1,11 +1,21 @@
 <template>
   <div class="options">
-    <button>Opção</button>
+    <button
+      v-for="(opcao, index) in opcoes"
+      :key="opcao"
+      @click="$emit('votar', index)"
+    >
+      {{ opcao.opcao }}
+    </button>
   </div>
 </template>
+
 <script>
-export default {};
+export default {
+  props: ["opcoes"],
+};
 </script>
+
 <style lang="scss">
 .question {
   display: flex;
