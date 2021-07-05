@@ -4,7 +4,7 @@ import '../styles/Cabine.scss'
 
 export default function Cabine(props) {
   const botoes = props.opcoes.map((option, index) => (
-    <button key={option}
+    <button key={index}
       onClick={() => props.onClick(index)}>
       {option.opcao}
     </button>
