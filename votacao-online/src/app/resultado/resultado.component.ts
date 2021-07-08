@@ -12,6 +12,9 @@ export class ResultadoComponent implements OnInit {
   @Input()
   totalCount!: number;
 
+  @Input()
+  color?: string;
+
   ngOnInit(): void {
   }
 
