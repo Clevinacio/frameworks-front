@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'card-votacao',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-votacao.component.scss']
 })
 export class CardVotacaoComponent implements OnInit {
+  @Input()
   pergunta = "Pergunta um pouco maior para testar o espaçamento"
+  @Input()
   opcoes = [
     {
       opcao: 'Sim',
@@ -21,7 +23,9 @@ export class CardVotacaoComponent implements OnInit {
       count: 3,
     }
   ]
+  @Input()
   mode: string = 'open';
+
   totalVotes: number = 0;
   result() {
     this.opcoes.forEach(opcao => {

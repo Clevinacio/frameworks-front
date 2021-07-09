@@ -186,7 +186,7 @@
         },
         {
             "name": "CardVotacaoComponent",
-            "id": "component-CardVotacaoComponent-e7a6baafeb0b780aca26fbe2e5b2f8df",
+            "id": "component-CardVotacaoComponent-57e59d47672f99992b84b68af4e3d66c",
             "file": "src/app/card-votacao/card-votacao.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -202,40 +202,33 @@
                 "./card-votacao.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [
+            "inputsClass": [
                 {
                     "name": "mode",
                     "defaultValue": "'open'",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 24
+                    "line": 27,
+                    "type": "string"
                 },
                 {
                     "name": "opcoes",
                     "defaultValue": "[\r\n    {\r\n      opcao: 'Sim',\r\n      count: 6,\r\n    },\r\n    {\r\n      opcao: 'Não',\r\n      count: 5,\r\n    },\r\n    {\r\n      opcao: 'Talvez',\r\n      count: 3,\r\n    }\r\n  ]",
-                    "type": "[]",
-                    "optional": false,
-                    "description": "",
-                    "line": 10
+                    "line": 12
                 },
                 {
                     "name": "pergunta",
                     "defaultValue": "\"Pergunta um pouco maior para testar o espaçamento\"",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 9
-                },
+                    "line": 10
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
                 {
                     "name": "totalVotes",
                     "defaultValue": "0",
                     "type": "number",
                     "optional": false,
                     "description": "",
-                    "line": 25
+                    "line": 29
                 }
             ],
             "methodsClass": [
@@ -245,7 +238,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 38
+                    "line": 42
                 },
                 {
                     "name": "onClick",
@@ -258,7 +251,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 33,
+                    "line": 37,
                     "jsdoctags": [
                         {
                             "name": "index",
@@ -275,7 +268,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 26
+                    "line": 30
                 }
             ],
             "hostBindings": [],
@@ -283,7 +276,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'card-votacao',\r\n  templateUrl: './card-votacao.component.html',\r\n  styleUrls: ['./card-votacao.component.scss']\r\n})\r\nexport class CardVotacaoComponent implements OnInit {\r\n  pergunta = \"Pergunta um pouco maior para testar o espaçamento\"\r\n  opcoes = [\r\n    {\r\n      opcao: 'Sim',\r\n      count: 6,\r\n    },\r\n    {\r\n      opcao: 'Não',\r\n      count: 5,\r\n    },\r\n    {\r\n      opcao: 'Talvez',\r\n      count: 3,\r\n    }\r\n  ]\r\n  mode: string = 'open';\r\n  totalVotes: number = 0;\r\n  result() {\r\n    this.opcoes.forEach(opcao => {\r\n      this.totalVotes += opcao.count\r\n    });\r\n    this.mode = 'closed';\r\n  }\r\n\r\n  onClick(index: number) {\r\n    this.opcoes[index].count += 1;\r\n    console.log(this.opcoes[index].count);\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'card-votacao',\r\n  templateUrl: './card-votacao.component.html',\r\n  styleUrls: ['./card-votacao.component.scss']\r\n})\r\nexport class CardVotacaoComponent implements OnInit {\r\n  @Input()\r\n  pergunta = \"Pergunta um pouco maior para testar o espaçamento\"\r\n  @Input()\r\n  opcoes = [\r\n    {\r\n      opcao: 'Sim',\r\n      count: 6,\r\n    },\r\n    {\r\n      opcao: 'Não',\r\n      count: 5,\r\n    },\r\n    {\r\n      opcao: 'Talvez',\r\n      count: 3,\r\n    }\r\n  ]\r\n  @Input()\r\n  mode: string = 'open';\r\n\r\n  totalVotes: number = 0;\r\n  result() {\r\n    this.opcoes.forEach(opcao => {\r\n      this.totalVotes += opcao.count\r\n    });\r\n    this.mode = 'closed';\r\n  }\r\n\r\n  onClick(index: number) {\r\n    this.opcoes[index].count += 1;\r\n    console.log(this.opcoes[index].count);\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -539,6 +532,22 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "Card1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/cardVotacao.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Card2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/cardVotacao.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -661,6 +670,14 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/cardVotacao.stories.ts",
+                "type": "Story<CardVotacaoComponent>",
+                "defaultValue": "(args: CardVotacaoComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Header.stories.ts",
                 "type": "Story<Header>",
                 "defaultValue": "(args: Header) => ({\r\n  props: args,\r\n})"
@@ -710,6 +727,32 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/cardVotacao.stories.ts": [
+                {
+                    "name": "Card1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/cardVotacao.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Card2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/cardVotacao.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/cardVotacao.stories.ts",
+                    "type": "Story<CardVotacaoComponent>",
+                    "defaultValue": "(args: CardVotacaoComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -1104,6 +1147,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "TrêsOpções",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/cardVotacao.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Card1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/cardVotacao.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Card2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/cardVotacao.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
