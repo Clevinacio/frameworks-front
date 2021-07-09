@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/Resultado.scss'
+
 export default function Resultado(props) {
   const totalVotos = props.totalVotos;
   const resultado = props.opcoes.map((option, index) => (
