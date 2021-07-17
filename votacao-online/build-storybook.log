@@ -24,123 +24,153 @@ Node.js version : v14.17.1
 
 Operating system : Windows 10
 
-[[90m10:38:30[39m] No configuration file found, switching to CLI flags.
-[[90m10:38:30[39m] Using tsconfig file : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.browserslistrc
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.editorconfig
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.gitignore
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\angular.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\documentation.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\karma.conf.js
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\build-storybook.log
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\package-lock.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\package.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\README.md
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.app.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.spec.json
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\yarn.lock
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\preview.js
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\main.js
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\tsconfig.json
-[[90m10:38:30[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\typings.d.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\favicon.ico
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\index.html
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\main.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\polyfills.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\styles.scss
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\test.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.html
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.scss
-[[90m10:38:30[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.spec.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.module.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\assets\.gitkeep
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\environments\environment.prod.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\environments\environment.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\button.component.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\button.css
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\Button.stories.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\header.component.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\header.css
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\Header.stories.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\Introduction.stories.mdx
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\page.component.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\page.css
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\Page.stories.ts
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\code-brackets.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\colors.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\comments.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\direction.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\flow.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\plugin.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\repo.svg
-[[90m10:38:30[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\stackalt.svg
-[[90m10:38:30[39m] Searching package.json file
-[[90m10:38:30[39m] package.json file found
-[[90m10:38:30[39m] Processing package.json dependencies
-[[90m10:38:30[39m] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[[90m10:38:30[39m] README.md file found
-[[90m10:38:30[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\CHANGELOG read
-[[90m10:38:30[39m] Continuing without CHANGELOG.md file
-[[90m10:38:30[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\CONTRIBUTING read
-[[90m10:38:30[39m] Continuing without CONTRIBUTING.md file
-[[90m10:38:30[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\LICENSE read
-[[90m10:38:30[39m] Continuing without LICENSE.md file
-[[90m10:38:30[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\TODO read
-[[90m10:38:30[39m] Continuing without TODO.md file
-[[90m10:38:30[39m] Get dependencies data
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/main.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/polyfills.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/test.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/app.component.ts
-[[90m10:38:30[39m] found          : AppComponent
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/app.module.ts
-[[90m10:38:30[39m] found          : AppModule
-[[90m10:38:30[39m]                : - imports:
-[[90m10:38:30[39m]                : 	- BrowserModule
-[[90m10:38:30[39m]                : - declarations:
-[[90m10:38:30[39m]                : 	- AppComponent
-[[90m10:38:30[39m]                : - bootstrap:
-[[90m10:38:30[39m]                : 	- AppComponent
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/environments/environment.prod.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/environments/environment.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/button.component.ts
-[[90m10:38:30[39m] found          : ButtonComponent
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/Button.stories.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/header.component.ts
-[[90m10:38:30[39m] found          : HeaderComponent
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/Header.stories.ts
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/page.component.ts
-[[90m10:38:30[39m] found          : PageComponent
-[[90m10:38:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/Page.stories.ts
-[[90m10:38:30[39m] -------------------
-[[90m10:38:30[39m] Project statistics 
-[[90m10:38:30[39m] - files      : 48
-[[90m10:38:30[39m] - module     : 1
-[[90m10:38:30[39m] - component  : 4
-[[90m10:38:30[39m] -------------------
-[[90m10:38:30[39m] Prepare components
-[[90m10:38:30[39m]  AppComponent has a templateUrl, include it
-[[90m10:38:30[39m]  AppComponent has styleUrls, include them
-[[90m10:38:30[39m]  ButtonComponent has styleUrls, include them
-[[90m10:38:30[39m]  HeaderComponent has styleUrls, include them
-[[90m10:38:30[39m]  PageComponent has styleUrls, include them
-[[90m10:38:30[39m] Prepare modules
-[[90m10:38:30[39m] Prepare miscellaneous
-[[90m10:38:30[39m] Process documentation coverage report
-[[90m10:38:30[39m] Generating documentation in export format json
-[[90m10:38:30[39m] Documentation generated in ./ in 0.467 seconds
-Done in 2.65s.
-info @storybook/angular v6.4.0-alpha.10
+[[90m15:37:29[39m] No configuration file found, switching to CLI flags.
+[[90m15:37:29[39m] Using tsconfig file : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.browserslistrc
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.gitignore
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\angular.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.editorconfig
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\documentation.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\build-storybook.log
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\karma.conf.js
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\package-lock.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\package.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\README.md
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.app.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\tsconfig.spec.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\yarn.lock
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\main.js
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\tsconfig.json
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\preview.js
+[[90m15:37:29[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\typings.d.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\favicon.ico
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\index.html
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\main.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\polyfills.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\styles.scss
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\test.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\environments\environment.prod.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\environments\environment.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.html
+[[90m15:37:29[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.spec.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.module.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\cabine.stories.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\cardVotacao.stories.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\resultado.stories.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\app.component.scss
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\assets\.gitkeep
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\cabine\cabine.component.scss
+[[90m15:37:29[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\cabine\cabine.component.spec.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\cabine\cabine.component.html
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\cabine\cabine.component.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\card-votacao\card-votacao.component.html
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\card-votacao\card-votacao.component.scss
+[[90m15:37:29[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\card-votacao\card-votacao.component.spec.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\card-votacao\card-votacao.component.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\resultado\resultado.component.scss
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\resultado\resultado.component.html
+[[90m15:37:29[39m] Ignoring       : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\resultado\resultado.component.spec.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\app\resultado\resultado.component.ts
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\code-brackets.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\colors.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\comments.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\direction.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\flow.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\plugin.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\repo.svg
+[[90m15:37:29[39m] Including      : C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\src\stories\assets\stackalt.svg
+[[90m15:37:29[39m] Searching package.json file
+[[90m15:37:29[39m] package.json file found
+[[90m15:37:29[39m] Processing package.json dependencies
+[[90m15:37:29[39m] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[[90m15:37:29[39m] README.md file found
+[[90m15:37:29[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\CHANGELOG read
+[[90m15:37:29[39m] Continuing without CHANGELOG.md file
+[[90m15:37:29[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\CONTRIBUTING read
+[[90m15:37:29[39m] Continuing without CONTRIBUTING.md file
+[[90m15:37:29[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\LICENSE read
+[[90m15:37:29[39m] Continuing without LICENSE.md file
+[[90m15:37:29[39m] Error during C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\TODO read
+[[90m15:37:29[39m] Continuing without TODO.md file
+[[90m15:37:29[39m] Get dependencies data
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/main.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/polyfills.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/test.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/environments/environment.prod.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/environments/environment.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/app.module.ts
+[[90m15:37:30[39m] found          : AppModule
+[[90m15:37:30[39m]                : - imports:
+[[90m15:37:30[39m]                : 	- BrowserModule
+[[90m15:37:30[39m]                : - declarations:
+[[90m15:37:30[39m]                : 	- AppComponent
+[[90m15:37:30[39m]                : 	- CardVotacaoComponent
+[[90m15:37:30[39m]                : 	- CabineComponent
+[[90m15:37:30[39m]                : 	- ResultadoComponent
+[[90m15:37:30[39m]                : - bootstrap:
+[[90m15:37:30[39m]                : 	- AppComponent
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/app.component.ts
+[[90m15:37:30[39m] found          : AppComponent
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/cabine.stories.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/cardVotacao.stories.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/stories/resultado.stories.ts
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/cabine/cabine.component.ts
+[[90m15:37:30[39m] found          : CabineComponent
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/card-votacao/card-votacao.component.ts
+[[90m15:37:30[39m] found          : CardVotacaoComponent
+[[90m15:37:30[39m] parsing        : C:/Users/Cleverton/Dev/UFRN/frameworks-front/votacao-online/src/app/resultado/resultado.component.ts
+[[90m15:37:30[39m] found          : ResultadoComponent
+[[90m15:37:30[39m] -------------------
+[[90m15:37:30[39m] Project statistics 
+[[90m15:37:30[39m] - files      : 50
+[[90m15:37:30[39m] - module     : 1
+[[90m15:37:30[39m] - component  : 4
+[[90m15:37:30[39m] -------------------
+[[90m15:37:30[39m] Prepare components
+[[90m15:37:30[39m]  AppComponent has a templateUrl, include it
+[[90m15:37:30[39m]  AppComponent has styleUrls, include them
+[[90m15:37:30[39m]  CabineComponent has a templateUrl, include it
+[[90m15:37:30[39m]  CabineComponent has styleUrls, include them
+[[90m15:37:30[39m]  CardVotacaoComponent has a templateUrl, include it
+[[90m15:37:30[39m]  CardVotacaoComponent has styleUrls, include them
+[[90m15:37:30[39m]  ResultadoComponent has a templateUrl, include it
+[[90m15:37:30[39m]  ResultadoComponent has styleUrls, include them
+[[90m15:37:30[39m] Prepare modules
+[[90m15:37:30[39m] Prepare miscellaneous
+[[90m15:37:30[39m] Process documentation coverage report
+[[90m15:37:30[39m] Generating documentation in export format json
+[[90m15:37:30[39m] Documentation generated in ./ in 0.561 seconds
+Done in 3.31s.
+info @storybook/angular v6.3.4
 info 
-info => Cleaning outputDir: C:\Users\CLEVER~1\AppData\Local\Temp\chromatic--6260-xUcAQext8mnD
+info => Cleaning outputDir: C:\Users\CLEVER~1\AppData\Local\Temp\chromatic--15740-WDBC1eM85ca6
 info => Loading presets
 info => Compiling preview..
 info => Loading 1 config file in "C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook"
 info => Loading 9 other files in "C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook"
 info => Adding stories defined in "C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\.storybook\main.js"
 info => Found custom tsconfig.json
+Compiling @angular/animations : fesm2015 as esm2015
+Compiling @angular/core : fesm2015 as esm2015
+Compiling @angular/animations/browser : fesm2015 as esm2015
+Compiling @angular/animations/browser/testing : fesm2015 as esm2015
+Compiling @angular/common : fesm2015 as esm2015
+Compiling @angular/common/http : fesm2015 as esm2015
+Compiling @angular/common/http/testing : fesm2015 as esm2015
+Compiling @angular/elements : fesm2015 as esm2015
+Compiling @angular/forms : fesm2015 as esm2015
+Compiling @angular/platform-browser : fesm2015 as esm2015
+Compiling @angular/platform-browser/animations : fesm2015 as esm2015
+Compiling @angular/core/testing : fesm2015 as esm2015
+Compiling @angular/platform-browser-dynamic : fesm2015 as esm2015
+Compiling @angular/platform-browser/testing : fesm2015 as esm2015
+Compiling @angular/compiler/testing : fesm2015 as esm2015
+Compiling @angular/platform-browser-dynamic/testing : fesm2015 as esm2015
+Compiling @angular/common/testing : fesm2015 as esm2015
+Compiling @angular/router : fesm2015 as esm2015
+Compiling @angular/router/testing : fesm2015 as esm2015
 info => Using implicit CSS loaders
 info => Loading angular-cli config
 info => Using angular project "votacao-online:build" for configuring Storybook
@@ -252,7 +282,7 @@ Starting type checking service...
 <s> [webpack.Progress] 9% setup compilation NoEmitOnErrorsPlugin
 <s> [webpack.Progress] 9% setup compilation RealContentHashPlugin
 <s> [webpack.Progress] 9% setup compilation WasmFinalizeExportsPlugin
-<s> [webpack.Progress] 9% setup compilation NamedModuleIdsPlugin
+<s> [webpack.Progress] 9% setup compilation DeterministicModuleIdsPlugin
 <s> [webpack.Progress] 9% setup compilation DeterministicChunkIdsPlugin
 <s> [webpack.Progress] 9% setup compilation DefinePlugin
 <s> [webpack.Progress] 9% setup compilation TerserPlugin
@@ -265,44 +295,47 @@ Starting type checking service...
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
 <s> [webpack.Progress] 10% building 0/15 entries 14/42 dependencies 0/14 modules
-<s> [webpack.Progress] 10% building 0/15 entries 15/46 dependencies 0/14 modules
+<s> [webpack.Progress] 10% building 0/15 entries 14/43 dependencies 0/14 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/style-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/node_modules/css-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/resolve-url-loader/index.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building 0/15 entries 15/46 dependencies 0/15 modules
-<s> [webpack.Progress] 10% building import loader ./node_modules/@mdx-js/loader/index.js
-<s> [webpack.Progress] 10% building 0/15 entries 157/217 dependencies 8/89 modules
-<s> [webpack.Progress] 13% building 1/15 entries 172/412 dependencies 11/101 modules
+<s> [webpack.Progress] 10% building 0/15 entries 25/49 dependencies 0/25 modules
+<s> [webpack.Progress] 10% building 0/15 entries 165/223 dependencies 10/98 modules
+<s> [webpack.Progress] 13% building 1/15 entries 170/431 dependencies 12/100 modules
+<s> [webpack.Progress] 13% building 1/15 entries 443/559 dependencies 15/196 modules
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/angular/node_modules/ts-loader/index.js
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/angular/dist/ts3.9/server/ngx-template-loader/index.js
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 13% building 1/15 entries 472/563 dependencies 14/206 modules
-<s> [webpack.Progress] 13% building 1/15 entries 561/700 dependencies 16/261 modules
+<s> [webpack.Progress] 13% building 1/15 entries 485/559 dependencies 15/207 modules
+<s> [webpack.Progress] 13% building 1/15 entries 590/776 dependencies 18/258 modules
 [BABEL] Note: The code generator has deoptimised the styling of C:\Users\Cleverton\Dev\UFRN\frameworks-front\votacao-online\node_modules\prettier\standalone.js as it exceeds the max of 500KB.
-<s> [webpack.Progress] 13% building 1/15 entries 758/843 dependencies 23/274 modules
-<s> [webpack.Progress] 17% building 2/15 entries 1403/1504 dependencies 133/375 modules
-<s> [webpack.Progress] 17% building 2/15 entries 1900/2035 dependencies 283/464 modules
+<s> [webpack.Progress] 13% building 1/15 entries 700/857 dependencies 22/261 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1313/1389 dependencies 101/357 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1768/1900 dependencies 260/432 modules
 <s> [webpack.Progress] 17% building import loader ./node_modules/raw-loader/dist/cjs.js
-<s> [webpack.Progress] 17% building 2/15 entries 1943/2035 dependencies 285/475 modules
-<s> [webpack.Progress] 17% building 2/15 entries 2400/2458 dependencies 320/577 modules
-<s> [webpack.Progress] 17% building 2/15 entries 3015/3100 dependencies 411/844 modules
-<s> [webpack.Progress] 17% building 2/15 entries 3700/3782 dependencies 593/999 modules
-<s> [webpack.Progress] 19% building 2/15 entries 4400/4489 dependencies 865/1134 modules
-<s> [webpack.Progress] 22% building 3/15 entries 4984/5027 dependencies 1125/1262 modules
-<s> [webpack.Progress] 24% building 4/15 entries 4984/5027 dependencies 1126/1262 modules
-<s> [webpack.Progress] 28% building 5/15 entries 4984/5027 dependencies 1127/1262 modules
-<s> [webpack.Progress] 31% building 6/15 entries 4984/5027 dependencies 1128/1262 modules
-<s> [webpack.Progress] 35% building 7/15 entries 4984/5027 dependencies 1129/1262 modules
-<s> [webpack.Progress] 39% building 8/15 entries 4984/5027 dependencies 1130/1262 modules
-<s> [webpack.Progress] 43% building 9/15 entries 4984/5027 dependencies 1131/1262 modules
-<s> [webpack.Progress] 46% building 10/15 entries 4984/5027 dependencies 1132/1262 modules
-<s> [webpack.Progress] 50% building 11/15 entries 4984/5027 dependencies 1133/1262 modules
-<s> [webpack.Progress] 54% building 12/15 entries 5498/5503 dependencies 1366/1404 modules
-<s> [webpack.Progress] 57% building 13/15 entries 5532/5533 dependencies 1399/1418 modules
-<s> [webpack.Progress] 61% building 14/15 entries 5532/5533 dependencies 1400/1418 modules
-<s> [webpack.Progress] 64% building 15/15 entries 5535/5535 dependencies 1418/1418 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1946/2035 dependencies 275/476 modules
+<s> [webpack.Progress] 17% building 2/15 entries 2400/2593 dependencies 314/576 modules
+<s> [webpack.Progress] 17% building 2/15 entries 2600/2695 dependencies 332/605 modules
+<s> [webpack.Progress] 17% building 2/15 entries 3093/3200 dependencies 456/786 modules
+<s> [webpack.Progress] 17% building 2/15 entries 3513/3600 dependencies 548/998 modules
+<s> [webpack.Progress] 18% building 2/15 entries 4200/4318 dependencies 794/1091 modules
+<s> [webpack.Progress] 21% building 2/15 entries 4900/4946 dependencies 1083/1251 modules
+<s> [webpack.Progress] 22% building 3/15 entries 4941/4980 dependencies 1131/1263 modules
+<s> [webpack.Progress] 24% building 4/15 entries 4941/4980 dependencies 1132/1263 modules
+<s> [webpack.Progress] 28% building 5/15 entries 4941/4980 dependencies 1133/1263 modules
+<s> [webpack.Progress] 32% building 6/15 entries 4941/4980 dependencies 1134/1263 modules
+<s> [webpack.Progress] 35% building 7/15 entries 4941/4980 dependencies 1135/1263 modules
+<s> [webpack.Progress] 39% building 8/15 entries 4941/4980 dependencies 1136/1263 modules
+<s> [webpack.Progress] 42% building 9/15 entries 4941/4980 dependencies 1137/1263 modules
+<s> [webpack.Progress] 46% building 10/15 entries 4941/4980 dependencies 1138/1263 modules
+<s> [webpack.Progress] 50% building 11/15 entries 4941/4980 dependencies 1139/1263 modules
+<s> [webpack.Progress] 54% building 12/15 entries 5477/5481 dependencies 1363/1398 modules
+<s> [webpack.Progress] 57% building 13/15 entries 5511/5512 dependencies 1394/1411 modules
+<s> [webpack.Progress] 61% building 14/15 entries 5511/5512 dependencies 1395/1411 modules
+<s> [webpack.Progress] 65% building 15/15 entries 5512/5512 dependencies 1411/1411 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
 <s> [webpack.Progress] 69% building finish
@@ -357,7 +390,7 @@ Starting type checking service...
 <s> [webpack.Progress] 80% sealing before module ids
 <s> [webpack.Progress] 80% sealing before module ids
 <s> [webpack.Progress] 80% sealing module ids
-<s> [webpack.Progress] 80% sealing module ids NamedModuleIdsPlugin
+<s> [webpack.Progress] 80% sealing module ids DeterministicModuleIdsPlugin
 <s> [webpack.Progress] 80% sealing module ids
 <s> [webpack.Progress] 81% sealing module id optimization
 <s> [webpack.Progress] 81% sealing module id optimization
@@ -402,3 +435,98 @@ Starting type checking service...
 <s> [webpack.Progress] 92% sealing asset processing copy-webpack-plugin
 <s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.e01311b0.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.e01311b0.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.ec83bf0f.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.ec83bf0f.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 90.4c937e30.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 90.4c937e30.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.dfeb48ec.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.dfeb48ec.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.6d62563f.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.6d62563f.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.0694d935.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.0694d935.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.985f4158.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.985f4158.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 193.39e66767.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 193.39e66767.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.e01311b0.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.e01311b0.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.ec83bf0f.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.ec83bf0f.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 90.4c937e30.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 90.4c937e30.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.dfeb48ec.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.dfeb48ec.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.6d62563f.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.6d62563f.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.0694d935.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.0694d935.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.985f4158.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.985f4158.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 193.39e66767.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 193.39e66767.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing AnyComponentStyleBudgetChecker
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 95% emitting emit fork-ts-checker-webpack-plugin
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 98% emitting after emit SizeLimitsPlugin
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% done plugins CaseSensitivePathsPlugin
+<s> [webpack.Progress] 99% done plugins fork-ts-checker-webpack-plugin
+<s> [webpack.Progress] 99% done plugins fork-ts-checker-webpack-plugin
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% 
+
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache begin idle
+<s> [webpack.Progress] 99% cache begin idle
+<s> [webpack.Progress] 100% 
+
+info => Preview built (1.17 min)
+WARN System.import() is deprecated and will be removed soon. Use import() instead.
+WARN For more info visit https://webpack.js.org/guides/code-splitting/
+WARN System.import() is deprecated and will be removed soon. Use import() instead.
+WARN For more info visit https://webpack.js.org/guides/code-splitting/
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   193.2c26fb25.iframe.bundle.js (3.87 MiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (3.91 MiB)
+WARN       runtime~main.6ac89289.iframe.bundle.js
+WARN       193.2c26fb25.iframe.bundle.js
+WARN       main.277398b2.iframe.bundle.js
+WARN 
+<s> [webpack.Progress] 99% cache shutdown
+<s> [webpack.Progress] 99% cache shutdown
+<s> [webpack.Progress] 100% 
+
+info => Output directory: C:\Users\CLEVER~1\AppData\Local\Temp\chromatic--15740-WDBC1eM85ca6
