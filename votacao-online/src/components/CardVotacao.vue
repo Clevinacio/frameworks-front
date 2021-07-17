@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-mutating-props */
 <template>
   <div class="container">
     <div class="question">
@@ -9,7 +10,7 @@
     </div>
 
     <div v-else>
-      <Resultado :opcoes="opcoes" :totalCount="totalVotes"></Resultado>
+      <Resultado :opcoes="opcoes" :totalCount="getTotalVotos"></Resultado>
     </div>
   </div>
 </template>
@@ -17,7 +18,7 @@
 import Cabine from "./Cabine";
 import Resultado from "./Resultado";
 
-const opcoes = [
+const opcoesDefault = [
   {
     opcao: "Sim",
     count: 3,
@@ -37,23 +38,34 @@ export default {
     Cabine,
     Resultado,
   },
-  data: () => ({
-    pergunta: "Teste de pergunta Vue",
-    mode: "open",
-    totalVotes: 0,
-  }),
+  props: {
+    pergunta: {
+      type: String,
+      default: "Teste de pergunta Vue",
+    },
+    opcoes: {
+      type: Array,
+      default: opcoesDefault,
+    },
+    mode: {
+      type: String,
+      default: "open",
+    },
+  },
+  data: () => ({}),
   methods: {
     resultado(index) {
-      this.opcoes[index].count += 1;
-      this.opcoes.forEach((opcao) => {
-        this.totalVotes += opcao.count;
-      });
-      this.mode = "closed";
+      let opcoesVotacao = this.opcoes;
+      opcoesVotacao[index].count += 1;
     },
   },
   computed: {
-    opcoes() {
-      return opcoes;
+    getTotalVotos() {
+      let totalVotes = 0;
+      this.opcoes.forEach((opcao) => {
+        totalVotes += opcao.count;
+      });
+      return totalVotes;
     },
   },
 };
@@ -67,7 +79,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  height: 40vh;
+  height: 60vh;
   border-radius: 8px;
   box-shadow: 1 3px 12px rgba(0, 0, 0, 0.233);
 }
@@ -79,6 +91,7 @@ export default {
   h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    margin-top: 10px;
     width: 100%;
     color: #2c3e50;
     align-self: center;

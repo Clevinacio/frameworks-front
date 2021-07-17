@@ -17,20 +17,6 @@ export default {
 </script>
 
 <style lang="scss">
-.question {
-  display: flex;
-  text-align: center;
-
-  h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    width: 100%;
-    color: rgb(189, 190, 190);
-    margin: 20px;
-    align-self: center;
-  }
-}
-
 .options {
   margin: 30px auto;
   display: flex;
