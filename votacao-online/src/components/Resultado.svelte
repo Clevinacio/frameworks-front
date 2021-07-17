@@ -1,13 +1,21 @@
 <script>
   export let opcoes;
-  export let totalVotos;
+  export let color = "#fff";
+
+  let totalVotos = 0;
+  function total() {
+    opcoes.forEach((opcao) => {
+      totalVotos += opcao.count;
+    });
+    return totalVotos;
+  }
 </script>
 
 <div>
   {#each opcoes as opcao, index (index)}
-    <p>
+    <p style="color: {color}">
       {index + 1}. {opcao.opcao} - {opcao.count} votos ({parseInt(
-        (opcao.count / totalVotos) * 100
+        (opcao.count / total()) * 100
       )}%)
     </p>
   {/each}
@@ -20,7 +28,6 @@
       font-size: 18px;
       font-weight: 500;
       font-family: "Roboto", sans-serif;
-      color: #f0f0f0;
     }
   }
 </style>

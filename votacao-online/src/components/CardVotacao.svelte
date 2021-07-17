@@ -2,8 +2,8 @@
   import Cabine from "./Cabine.svelte";
   import Resultado from "./Resultado.svelte";
 
-  const pergunta = "Nova pergunta";
-  const opcoes = [
+  export let pergunta = "Nova pergunta";
+  export let opcoes = [
     {
       opcao: "Sim",
       count: 6,
@@ -18,15 +18,10 @@
     },
   ];
 
-  let mode = "open";
-  let totalVotos = 0;
+  export let mode = "open";
 
   function votar(event) {
     opcoes[event.detail].count += 1;
-    opcoes.forEach((opcao) => {
-      totalVotos += opcao.count;
-      console.log(totalVotos);
-    });
     mode = "closed";
   }
 </script>
@@ -41,7 +36,7 @@
     </div>
   {:else}
     <div>
-      <Resultado {opcoes} {totalVotos} />
+      <Resultado {opcoes} />
     </div>
   {/if}
 </div>
@@ -54,7 +49,7 @@
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    height: 40vh;
+    height: 60vh;
     border-radius: 8px;
     box-shadow: 1 3px 12px rgba(0, 0, 0, 0.233);
   }
