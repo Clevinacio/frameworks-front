@@ -1,7 +1,7 @@
 import Resultado from '../components/Resultado.vue';
 
 export default {
-  title: 'Votacao/Resultado',
+  title: 'VotacaoVue/Resultado',
   component: Resultado
 }
 

@@ -1,7 +1,7 @@
 import Cabine from '../components/Cabine.vue';
 
 export default {
-  title: 'Votacao/Cabine',
+  title: 'VotacaoVue/Cabine',
   component: Cabine
 }
 

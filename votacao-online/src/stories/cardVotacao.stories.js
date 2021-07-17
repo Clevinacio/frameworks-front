@@ -1,7 +1,7 @@
 import CardVotacao from '../components/CardVotacao.vue';
 
 export default {
-  title: 'Votacao/CardVotacao',
+  title: 'VotacaoVue/CardVotacao',
   component: CardVotacao,
   argTypes: {
     mode: {
