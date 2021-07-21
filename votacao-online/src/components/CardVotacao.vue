@@ -5,7 +5,7 @@
       <h2>{{ pergunta }}</h2>
     </div>
 
-    <div v-if="mode === 'open'">
+    <div v-if="newMode === 'open'">
       <Cabine :opcoes="opcoes" @votar="resultado"> </Cabine>
     </div>
 
@@ -17,6 +17,7 @@
 <script>
 import Cabine from "./Cabine";
 import Resultado from "./Resultado";
+import { ref } from "vue";
 
 const opcoesDefault = [
   {
@@ -52,12 +53,16 @@ export default {
       default: "open",
     },
   },
-  data: () => ({}),
-  methods: {
-    resultado(index) {
-      let opcoesVotacao = this.opcoes;
+  setup(props) {
+    const newMode = ref(props.mode);
+    const opcoesVotacao = [...props.opcoes];
+
+    const resultado = (index) => {
       opcoesVotacao[index].count += 1;
-    },
+      newMode.value = "closed";
+    };
+
+    return { newMode, resultado, opcoesVotacao };
   },
   computed: {
     getTotalVotos() {
