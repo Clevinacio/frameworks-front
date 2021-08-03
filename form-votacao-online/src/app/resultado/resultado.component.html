@@ -1,0 +1,5 @@
+<div>
+  <p *ngFor="let opcao of opcoes; index as i" [ngStyle]="{'color': color}">
+    {{i+1}}. {{opcao.opcao}} - {{opcao.count}} votos ({{(opcao.count/totalCount)*100 | number:'2.0-0'}}%)
+  </p>
+</div>
