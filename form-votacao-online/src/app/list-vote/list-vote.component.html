@@ -1,0 +1,23 @@
+<div *ngIf="mode === 'view'">
+    <p>Questões</p>
+    <button (click)="addVote()">Nova questão</button>
+    <p *ngFor="let vote of voteService.votes; index as i">
+        <span>Enunciado da votação: {{vote.statement}}</span>
+        <button className="m5" (click)="editVote(i)">
+            Edita
+        </button>
+        <button className="m5" (click)="removeVote(i)">
+            Remove
+        </button>
+        <br />
+        <span>Opções de voto: </span><br />
+        <span *ngFor="let v of vote.options; index as i">
+            {{v}}<br />
+        </span>
+    </p>
+</div>
+
+<div *ngIf="mode !== 'view'">
+    <form-vote [vote]="voteService.votes[current]" (update)="updateChanges($event)" (cancel)="cancelChanges()">
+    </form-vote>
+</div>
