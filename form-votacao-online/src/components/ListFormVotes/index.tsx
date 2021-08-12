@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button, Container, Row } from "react-bootstrap";
+import { useState } from "react";
+import { Button, Container } from "react-bootstrap";
 import useVoteData from "../../hooks/useVoteData";
 import FormVotes from "../FormVotes";
 
@@ -12,7 +12,7 @@ export function ListFormVotes() {
     const {
         votes,
         createVote,
-        updateVote,
+        //updateVote,
         deleteVote,
     } = useVoteData();
 
@@ -45,7 +45,7 @@ export function ListFormVotes() {
         return (
             <Container className="container">
                 <h2>Votações</h2>
-                <Button variant="primary" className="mr-1" onClick={() => addVote()}>Nova questão</Button>{' '}
+                <Button variant="primary" className="mr-1" onClick={() => addVote()}>Nova votação</Button>{' '}
                 {vt}
             </Container>
 
