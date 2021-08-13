@@ -51,13 +51,11 @@ const FormVotes = ({ vote, onCancel, onUpdate }: Props) => {
             event.preventDefault();
             event.stopPropagation();
         } else {
-            console.log(dataVote.voteOption1);
             const options = [
                 dataVote.voteOption1,
                 dataVote.voteOption2,
                 dataVote.voteOption3
             ].filter(option => option.trim() !== '');
-            console.log(options);
             onUpdate({
                 statement: dataVote.statement,
                 voteOptions: [
