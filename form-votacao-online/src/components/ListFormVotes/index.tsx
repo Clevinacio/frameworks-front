@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import useVoteData from "../../hooks/useVoteData";
 import FormVotes from "../FormVotes";
@@ -20,6 +20,7 @@ export function ListFormVotes() {
         createVote();
         setCurrent(votes.length);
         setMode('add');
+        console.log(votes.length);
     };
 
     const editVote = (index: number) => {
@@ -30,6 +31,13 @@ export function ListFormVotes() {
     const removeVote = (index: number) => {
         deleteVote(index);
     };
+
+    const cancelChanges = (): void => {
+        if (mode === 'add') {
+            removeVote(votes.length - 1)
+        }
+        setMode('view')
+    }
 
     if (mode === 'view') {
         const vt = votes.map((v: any, i: number) => (
@@ -53,7 +61,7 @@ export function ListFormVotes() {
     } else {
         return (
             <Container className="container">
-                <FormVotes vote={votes[current]}></FormVotes>
+                <FormVotes vote={votes[current]} onCancel={cancelChanges}></FormVotes>
             </Container >
         );
     }

@@ -1,18 +1,22 @@
 import { useState } from 'react';
 
+type VoteOptionsType = {
+    option: string;
+    count: number;
+}
+
 type VoteType = {
     statement: string,
-    voteOptions: {
-        option: string,
-        count: number
-    }[]
+    voteOptions: VoteOptionsType[],
 }
 
 export default function useVoteData() {
     const [votes, setVotes] = useState<VoteType[]>([]);
 
     const createVote = () => {
+        console.log(votes);
         setVotes([...votes, { statement: '', voteOptions: [] }]);
+        console.log(votes);
     };
 
     const updateVote = (vote: VoteType, index: number) => {
