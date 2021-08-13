@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import useVoteData from "../../hooks/useVoteData";
 import FormVotes from "../FormVotes";
+import CardVotacao from "../CardVotacao";
 
 import "./style.scss";
 
@@ -53,6 +54,11 @@ export function ListFormVotes() {
         setMode('view')
     }
 
+    const showVote = (index: number): void => {
+        setCurrent(index);
+        setMode('show');
+    };
+
     if (mode === 'view') {
         const vt = votes.map((v: VoteType, i: number) => (
             <>
@@ -60,6 +66,7 @@ export function ListFormVotes() {
                     <b> Enunciado da votação:</b> {v.statement}{' - '}
                     <Button variant="warning" onClick={() => editVote(i)}>Editar</Button>{' '}
                     <Button variant="danger" onClick={() => removeVote(i)}>Remover</Button>
+                    <Button variant="success" onClick={() => showVote(i)}>Mostrar</Button>
                     <br />
                     <b>Opções:</b> <br />
                     {v.voteOptions.map((vo: VoteOptionsType, i: number) => (
@@ -77,6 +84,14 @@ export function ListFormVotes() {
                 {vt}
             </Container>
 
+        );
+    } if (mode === 'show') {
+        return (
+            <Container className="container">
+                <CardVotacao
+                    vote={votes[current]}
+                />
+            </Container>
         );
     } else {
         return (
