@@ -14,9 +14,14 @@ export default function useVoteData() {
     const [votes, setVotes] = useState<VoteType[]>([]);
 
     const createVote = () => {
-        console.log(votes);
-        setVotes([...votes, { statement: '', voteOptions: [] }]);
-        console.log(votes);
+        setVotes([...votes, {
+            statement: '',
+            voteOptions: [
+                { option: '', count: 0 },
+                { option: '', count: 0 },
+                { option: '', count: 0 },
+            ]
+        }]);
     };
 
     const updateVote = (vote: VoteType, index: number) => {

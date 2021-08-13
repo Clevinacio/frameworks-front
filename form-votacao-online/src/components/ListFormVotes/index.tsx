@@ -5,6 +5,16 @@ import FormVotes from "../FormVotes";
 
 import "./style.scss";
 
+type VoteOptionsType = {
+    option: string;
+    count: number;
+}
+
+type VoteType = {
+    statement: string,
+    voteOptions: VoteOptionsType[],
+}
+
 export function ListFormVotes() {
     const [mode, setMode] = useState('view');
     const [current, setCurrent] = useState(0);
@@ -12,7 +22,7 @@ export function ListFormVotes() {
     const {
         votes,
         createVote,
-        //updateVote,
+        updateVote,
         deleteVote,
     } = useVoteData();
 
@@ -20,7 +30,6 @@ export function ListFormVotes() {
         createVote();
         setCurrent(votes.length);
         setMode('add');
-        console.log(votes.length);
     };
 
     const editVote = (index: number) => {
@@ -32,6 +41,11 @@ export function ListFormVotes() {
         deleteVote(index);
     };
 
+    const updateChanges = (vote: VoteType) => {
+        updateVote(vote, current)
+        setMode('view')
+    }
+
     const cancelChanges = (): void => {
         if (mode === 'add') {
             removeVote(votes.length - 1)
@@ -40,13 +54,19 @@ export function ListFormVotes() {
     }
 
     if (mode === 'view') {
-        const vt = votes.map((v: any, i: number) => (
+        const vt = votes.map((v: VoteType, i: number) => (
             <>
                 <p key={i}>
-                    Enunciado da votação: {v.statement}
+                    <b> Enunciado da votação:</b> {v.statement}{' - '}
+                    <Button variant="warning" onClick={() => editVote(i)}>Editar</Button>{' '}
+                    <Button variant="danger" onClick={() => removeVote(i)}>Remover</Button>
+                    <br />
+                    <b>Opções:</b> <br />
+                    {v.voteOptions.map((vo: VoteOptionsType, i: number) => (
+                        <span key={i}>{vo.option} {i < v.voteOptions.length - 1 && ' - '} </span>
+                    ))}
                 </p>
-                <Button variant="warning" onClick={() => editVote(i)}>Editar</Button>
-                <Button variant="warning" onClick={() => removeVote(i)}>Remover</Button>
+
             </>
         ));
 
@@ -61,7 +81,11 @@ export function ListFormVotes() {
     } else {
         return (
             <Container className="container">
-                <FormVotes vote={votes[current]} onCancel={cancelChanges}></FormVotes>
+                <FormVotes
+                    vote={votes[current]}
+                    onCancel={cancelChanges}
+                    onUpdate={(vote: VoteType) => updateChanges(vote)}
+                ></FormVotes>
             </Container >
         );
     }
