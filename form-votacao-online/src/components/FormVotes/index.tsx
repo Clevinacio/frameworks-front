@@ -52,17 +52,13 @@ const FormVotes = ({ vote, onCancel, onUpdate }: Props) => {
             event.stopPropagation();
         } else {
             const options = [
-                dataVote.voteOption1,
-                dataVote.voteOption2,
-                dataVote.voteOption3
-            ].filter(option => option.trim() !== '');
+                { option: dataVote.voteOption1, count: 0 },
+                { option: dataVote.voteOption2, count: 0 },
+                { option: dataVote.voteOption3, count: 0 }
+            ].filter(option => option.option !== '');
             onUpdate({
                 statement: dataVote.statement,
-                voteOptions: [
-                    { option: options[0], count: 0 },
-                    { option: options[1], count: 0 },
-                    { option: options[2], count: 0 },
-                ]
+                voteOptions: options
             });
         }
         setValidated(true);

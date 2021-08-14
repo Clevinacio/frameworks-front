@@ -62,10 +62,10 @@ export function ListFormVotes() {
     if (mode === 'view') {
         const vt = votes.map((v: VoteType, i: number) => (
             <>
-                <p key={i}>
+                <p className="paragraph" key={i}>
                     <b> Enunciado da votação:</b> {v.statement}{' - '}
                     <Button variant="warning" onClick={() => editVote(i)}>Editar</Button>{' '}
-                    <Button variant="danger" onClick={() => removeVote(i)}>Remover</Button>
+                    <Button variant="danger" onClick={() => removeVote(i)}>Remover</Button>{' '}
                     <Button variant="success" onClick={() => showVote(i)}>Mostrar</Button>
                     <br />
                     <b>Opções:</b> <br />
