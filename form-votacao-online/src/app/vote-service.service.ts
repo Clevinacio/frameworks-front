@@ -1,16 +1,32 @@
 import { Injectable } from '@angular/core';
 
+type OptionsType = {
+    option: string,
+    count: 0
+}
+
+type VoteType = {
+    statement: string,
+    options: OptionsType[]
+};
 @Injectable({
     providedIn: 'root'
 })
 export class VoteService {
-    votes: any = [];
+    votes: VoteType[] = []
 
     createVote() {
-        this.votes.push({ statement: '', options: [] });
+        this.votes.push({
+            statement: '',
+            options: [
+                { option: '', count: 0 },
+                { option: '', count: 0 },
+                { option: '', count: 0 },
+            ]
+        });
     }
 
-    updateVote(vote: any, index: number) {
+    updateVote(vote: VoteType, index: number) {
         this.votes[index] = vote;
     }
 
