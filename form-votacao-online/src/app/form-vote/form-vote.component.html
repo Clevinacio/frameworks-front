@@ -1,5 +1,5 @@
 <form (ngSubmit)="onSubmit()">
-    Enunciado da votação: <input label="" [(ngModel)]="votes.statement" name="statement"><br>
+    Enunciado da votação: <input [(ngModel)]="votes.statement" name="statement"><br>
     Opção 1: <input [(ngModel)]="votes.option1" name="option1" placeholder="Opção 1" required><br>
     Opção 2: <input [(ngModel)]="votes.option2" name="option2" placeholder="Opção 2" required><br>
     Opção 3: <input [(ngModel)]="votes.option3" name="option3" placeholder="Opção 3"><br>
