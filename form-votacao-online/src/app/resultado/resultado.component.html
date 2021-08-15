@@ -1,0 +1,5 @@
+<div>
+    <p *ngFor="let option of voteOptions; index as i">
+        {{i+1}}. {{option.option}} - {{option.count}} votos ({{(option.count/total)*100}}%)
+    </p>
+</div>

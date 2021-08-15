@@ -1,18 +1,32 @@
 <div *ngIf="mode === 'view'" class="row justifiy-conten">
-    <div class="col-2">
+    <div class="col-4">
         <h2>Votações</h2>
     </div>
     <div class="w-100 d-none d-md-block"></div>
-    <div class="col-2">
+    <div class="col-4">
         <button class="btn btn-primary" (click)="addVote()">Nova votação</button>
     </div>
+    <div class="w-100 d-none d-md-block"></div>
+    <div class="col-6">
+        <p *ngFor="let vote of voteService.votes; index as i">
+            <span><b>Enunciado da votação:</b> {{vote.statement}} - </span>
+            <button class="btn btn-warning" (click)="editVote(i)">Editar</button>{{' '}}
+            <button class="btn btn-danger" (click)="removeVote(i)">Remover</button>{{' '}}
+            <button class="btn btn-success" (click)="showVote(i)">Usar</button>{{' '}}
+        </p>
+    </div>
 </div>
-<div *ngIf="mode !== 'view'" class="row">
+<div *ngIf="mode === 'show'">
+    <card-votacao [statement]="voteService.votes[current].statement" [options]="voteService.votes[current].options">
+    </card-votacao>
+</div>
+<div *ngIf="mode !== 'view' && mode !== 'show'" class="row">
     <div class="col-2">
         <h2>Formulário</h2>
     </div>
     <div class="w-100 d-none d-md-block"></div>
     <div class="col-5">
-        <vote-form (cancel)="cancelChanges()"></vote-form>
+        <vote-form [vote]="voteService.votes[current]" (update)="updateChanges($event)" (cancel)="cancelChanges()">
+        </vote-form>
     </div>
 </div>

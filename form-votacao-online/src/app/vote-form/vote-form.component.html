@@ -1,21 +1,27 @@
 <form class="needs-validation">
     <div class="mb-3">
-        <label for="statement" class="form-label">Enunciado</label>
-        <textarea type="textarea" class="form-control" id="statement" minlength="3" placeholder="Digite o enunciado..."
-            required></textarea>
+        <label for="statement" class="form-label">Enunciado*</label>
+        <textarea [(ngModel)]="vt.statement" name="statement" type="textarea" class="form-control" id="statement"
+            minlength="3" placeholder="Digite o enunciado..." required></textarea>
         <div class="invalid-feedback">O campo é obrigatório e deve conter pelo menos 3 caracteres!</div>
     </div>
     <div class="mb-3">
-        <label for="option1" class="form-label">Opção 1</label>
-        <input type="text" class="form-control" id="option1" placeholder="Digite a opção 1..." required>
+        <label for="option1" class="form-label">Opção 1*</label>
+        <input [(ngModel)]="vt.voteOption1" name="option1" type="text" class="form-control" id="option1"
+            placeholder="Digite a opção 1..." required>
     </div>
     <div class="mb-3">
-        <label for="option2" class="form-label">Opção 2</label>
-        <input type="text" class="form-control" id="option2" placeholder="Digite a opção 2..." required>
+        <label for="option2" class="form-label">Opção 2*</label>
+        <input [(ngModel)]="vt.voteOption2" name="option2" type="text" class="form-control" id="option2"
+            placeholder="Digite a opção 2..." required>
     </div>
     <div class="mb-3">
         <label for="option3" class="form-label">Opção 3</label>
-        <input type="text" class="form-control" id="option3" placeholder="Digite a opção 3...">
+        <input [(ngModel)]="vt.voteOption3" name="option3" type="text" class="form-control" id="option3"
+            placeholder="Digite a opção 3...">
+    </div>
+    <div class="mb-3">
+        <span class="text-muted">(*) campos obrigatórios</span><br>
     </div>
     <button type="submit" class="btn btn-primary" (click)="onSubmit($event)">Salvar</button>{{' '}}
     <a class="btn btn-secondary" (click)="cancel.emit()">Cancelar</a>

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 type OptionsType = {
     option: string,
-    count: 0
+    count: number
 }
 
 type VoteType = {

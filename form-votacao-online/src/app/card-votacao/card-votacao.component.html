@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="question">
+        <h2>{{statement}}</h2>
+    </div>
+    <div *ngIf="mode === 'open'">
+        <cabine [options]="localOptions" (click)="vote($event); showResult()">
+        </cabine>
+    </div>
+    <div *ngIf="mode !== 'open'">
+        <resultado *ngIf="localOptions" [voteOptions]="localOptions"></resultado>
+    </div>
+
+
+</div>

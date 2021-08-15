@@ -3,7 +3,7 @@ import { VoteService } from '../vote-service.service';
 
 type OptionsType = {
     option: string,
-    count: 0
+    count: number
 }
 
 type VoteType = {
@@ -47,5 +47,10 @@ export class VoteListComponent {
             this.voteService.deleteVote(this.voteService.votes.length - 1)
         }
         this.mode = 'view'
+    }
+
+    showVote(index: number) {
+        this.current = index;
+        this.mode = 'show';
     }
 }
