@@ -12,9 +12,10 @@ type OptionsType = {
 })
 export class ResultadoComponent implements OnInit {
     @Input() voteOptions!: OptionsType[];
+    total: number = 0;
 
     ngOnInit() {
-        console.log(this.voteOptions);
+        this.total = this.totalVotos();
     }
 
     totalVotos = () => {
@@ -25,7 +26,4 @@ export class ResultadoComponent implements OnInit {
         })
         return total
     }
-
-    total = this.totalVotos();
-
 }
