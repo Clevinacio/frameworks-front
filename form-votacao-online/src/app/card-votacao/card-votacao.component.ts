@@ -23,6 +23,7 @@ export class CardVotacaoComponent implements OnInit {
     constructor(public voteService: VoteService) { }
 
     ngOnInit() {
+        console.log(this.options);
         this.localOptions = this.options;
     }
 
