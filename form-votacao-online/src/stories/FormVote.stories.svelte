@@ -16,7 +16,7 @@
     args={{
         vote: {
             statement: "teste",
-            options: ["sim", "não", "não sei"],
+            options: ["sim", "não"],
         },
     }}
 />
@@ -26,7 +26,7 @@
     args={{
         vote: {
             statement: "teste",
-            options: ["sim", "não"],
+            options: ["sim", "não", "não sei"],
         },
     }}
 />
