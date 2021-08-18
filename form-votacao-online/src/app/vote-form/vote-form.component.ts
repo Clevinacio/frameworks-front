@@ -36,10 +36,10 @@ export class VoteFormComponent implements OnInit {
         const { statement, options } = this.vote || {};
         const [option1, option2, option3] = options || [];
         this.vt = {
-            statement: statement,
-            voteOption1: option1.option,
-            voteOption2: option2.option,
-            voteOption3: option3.option,
+            statement: statement || '',
+            voteOption1: option1.option || '',
+            voteOption2: option2.option || '',
+            voteOption3: option3?.option || '',
         };
     }
 
@@ -59,10 +59,10 @@ export class VoteFormComponent implements OnInit {
                     count: 0
                 },
                 {
-                    option: this.vt.voteOption3,
+                    option: this.vt.voteOption3 || '',
                     count: 0
                 }
-            ].filter((o) => o.option !== '');
+            ].filter((o) => o && o.option.trim() !== '');
             this.update.emit({
                 statement: this.vt.statement,
                 options
