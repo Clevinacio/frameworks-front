@@ -33,7 +33,7 @@ const FormVotes = ({ vote, onCancel, onUpdate }: Props) => {
             statement: vote.statement || '',
             voteOption1: vote.voteOptions[0].option || '',
             voteOption2: vote.voteOptions[1].option || '',
-            voteOption3: vote.voteOptions[2].option || '',
+            voteOption3: vote.voteOptions[2]?.option || '',
         });
     }, [vote]);
 

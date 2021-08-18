@@ -16,7 +16,7 @@ type VoteType = {
     voteOptions: VoteOptionsType[],
 }
 
-export default function ListFormVotes() {
+function ListFormVotes() {
     const [mode, setMode] = useState('view');
     const [current, setCurrent] = useState(0);
 
@@ -106,3 +106,5 @@ export default function ListFormVotes() {
         );
     }
 }
+
+export default ListFormVotes;

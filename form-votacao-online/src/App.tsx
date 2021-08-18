@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import './App.scss';
-import { ListFormVotes } from './components/ListFormVotes';
+import ListFormVotes from './components/ListFormVotes';
 
 function App() {
     return (
