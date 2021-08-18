@@ -7,11 +7,13 @@
         </p>
     </div>
 </template>
+
 <script>
 export default {
     props: ["opcoes", "totalCount"],
 };
 </script>
+
 <style lang="scss">
 .result {
     margin: 0 50px;
