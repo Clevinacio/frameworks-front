@@ -9,4 +9,5 @@
     <div *ngIf="mode !== 'open'">
         <resultado *ngIf="localOptions" [voteOptions]="localOptions"></resultado>
     </div>
+    <button class="button" (click)="back.emit()">Voltar</button>
 </div>

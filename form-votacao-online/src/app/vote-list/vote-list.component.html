@@ -23,7 +23,8 @@
     </div>
 </div>
 <div *ngIf="mode === 'show'">
-    <card-votacao [statement]="voteService.votes[current].statement" [options]="voteService.votes[current].options">
+    <card-votacao [statement]="voteService.votes[current].statement" [options]="voteService.votes[current].options"
+        (back)="cancelChanges()">
     </card-votacao>
 </div>
 <div *ngIf="mode !== 'view' && mode !== 'show'" class="row">

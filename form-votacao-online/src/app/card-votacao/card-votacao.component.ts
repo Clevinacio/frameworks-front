@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { VoteService } from '../vote-service.service';
 
 type OptionsType = {
@@ -16,6 +16,7 @@ export class CardVotacaoComponent implements OnInit {
     statement!: string
     @Input()
     options!: OptionsType[]
+    @Output() back = new EventEmitter();
 
     localOptions: OptionsType[] = [];
     mode: string = 'open';
