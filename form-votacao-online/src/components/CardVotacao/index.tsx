@@ -16,9 +16,10 @@ type VoteType = {
 
 type Props = {
     vote: VoteType;
+    onCancel: () => void;
 }
 
-const CardVotacao = ({ vote }: Props) => {
+const CardVotacao = ({ vote, onCancel }: Props) => {
     const pergunta = vote.statement;
     const opcoes = vote.voteOptions;
 
@@ -49,6 +50,7 @@ const CardVotacao = ({ vote }: Props) => {
                 <h2>{pergunta}</h2>
             </div>
             {panel}
+            <button className="button" onClick={() => onCancel()}>Voltar</button>
         </div >
     )
 }

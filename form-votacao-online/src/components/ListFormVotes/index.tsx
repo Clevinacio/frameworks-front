@@ -16,7 +16,7 @@ type VoteType = {
     voteOptions: VoteOptionsType[],
 }
 
-export function ListFormVotes() {
+export default function ListFormVotes() {
     const [mode, setMode] = useState('view');
     const [current, setCurrent] = useState(0);
 
@@ -90,6 +90,7 @@ export function ListFormVotes() {
             <Container className="container">
                 <CardVotacao
                     vote={votes[current]}
+                    onCancel={cancelChanges}
                 />
             </Container>
         );
