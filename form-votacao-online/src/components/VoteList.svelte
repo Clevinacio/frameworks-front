@@ -27,6 +27,7 @@
 
     function showVote(index) {
         current = index;
+        options = [];
         $vtList[current].options.forEach((o) => {
             options.push({
                 option: o,
@@ -81,7 +82,11 @@
             {/each}
         </div>
     {:else if mode === "show"}
-        <CardVotacao statement={$vtList[current].statement} {options} />
+        <CardVotacao
+            statement={$vtList[current].statement}
+            {options}
+            on:back={cancelChanges}
+        />
     {:else}
         <div class="containerForm">
             <FormVote

@@ -1,4 +1,8 @@
 <script>
+    import { createEventDispatcher } from "svelte";
+
+    import { Button } from "sveltestrap";
+
     import Cabine from "./Cabine.svelte";
     import Resultado from "./Resultado.svelte";
 
@@ -6,6 +10,7 @@
     export let options;
 
     export let mode = "open";
+    const dispatch = createEventDispatcher();
 
     function votar(event) {
         options[event.detail].count += 1;
@@ -26,6 +31,12 @@
             <Resultado {options} />
         </div>
     {/if}
+    <button
+        class="button"
+        outline
+        color="warning"
+        on:click={(e) => dispatch("back")}>Voltar</button
+    >
 </div>
 
 <style lang="scss">
@@ -52,6 +63,26 @@
             color: #fff;
             margin: 20px;
             align-self: center;
+        }
+    }
+
+    .button {
+        font-family: "Poppins", sans-serif;
+        max-width: 120px;
+        height: 30px;
+        padding: 0px 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: rgb(234, 246, 255);
+        background: #ff3e00;
+        border: 0;
+        border-radius: 8px;
+        cursor: pointer;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
         }
     }
 </style>
