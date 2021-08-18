@@ -8,7 +8,20 @@ export const size = computed(() => vtList.length)
 export function createVote() {
     vtList.push({
         statement: '',
-        options: [],
+        options: [
+            {
+                option: '',
+                count: 0
+            },
+            {
+                option: '',
+                count: 0
+            },
+            {
+                option: '',
+                count: 0
+            }
+        ],
     })
 }
 

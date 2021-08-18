@@ -1,7 +1,7 @@
 <template>
     <div class="options">
         <button
-            v-for="(option, index) in opcoes"
+            v-for="(option, index) in options"
             :key="option"
             @click="$emit('votar', index)"
         >
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    props: ["opcoes"],
+    props: ["options"],
 };
 </script>
 

@@ -2,38 +2,25 @@
 <template>
     <div class="container">
         <div class="question">
-            <h2>{{ pergunta }}</h2>
+            <h2>{{ statement }}</h2>
         </div>
 
         <div v-if="newMode === 'open'">
-            <Cabine :opcoes="opcoes" @votar="resultado"> </Cabine>
+            <Cabine :options="options" @votar="resultado"> </Cabine>
         </div>
 
         <div v-else>
-            <Resultado :opcoes="opcoes" :totalCount="getTotalVotos"></Resultado>
+            <Resultado :options="optionsVotacao"></Resultado>
         </div>
-        <button class="button" @click="$emit('back')">Voltar</button>
+        <button class="button" @click="$emit('back', { statement, options })">
+            Voltar
+        </button>
     </div>
 </template>
 <script>
 import Cabine from "./Cabine";
 import Resultado from "./Resultado";
-import { ref } from "vue";
-
-const opcoesDefault = [
-    {
-        option: "Sim",
-        count: 3,
-    },
-    {
-        option: "Não",
-        count: 7,
-    },
-    {
-        option: "Talvez",
-        count: 2,
-    },
-];
+import { reactive, ref, toRef, toRefs } from "vue";
 
 export default {
     components: {
@@ -41,33 +28,28 @@ export default {
         Resultado,
     },
     props: {
-        pergunta: {
+        statement: {
             type: String,
             required: true,
         },
-        opcoes: {
+        options: {
             type: Array,
-            default: opcoesDefault,
+            required: true,
         },
     },
-    setup(props) {
-        const newMode = ref("open");
-        const opcoesVotacao = [...props.opcoes];
-
-        const resultado = (index) => {
-            opcoesVotacao[index].count += 1;
-            newMode.value = "closed";
+    data() {
+        return {
+            newMode: "open",
+            optionsVotacao: this.options,
         };
-
-        return { newMode, resultado, opcoesVotacao };
     },
-    computed: {
-        getTotalVotos() {
-            let totalVotes = 0;
-            this.opcoes.forEach((option) => {
-                totalVotes += option.count;
-            });
-            return totalVotes;
+    methods: {
+        resultado(index) {
+            console.log(this.optionsVotacao);
+            let { count } = toRefs(this.optionsVotacao[index]);
+            count.value++;
+            console.log(count.value);
+            this.newMode = "closed";
         },
     },
 };

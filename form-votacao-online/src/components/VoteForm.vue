@@ -64,10 +64,10 @@ export default {
         const [option1, option2, option3] = options || [];
         return {
             vt: {
-                statement,
-                option1,
-                option2,
-                option3,
+                statement: statement || "",
+                option1: option1.option || "",
+                option2: option2.option || "",
+                option3: option3?.option || "",
             },
             errors: {},
             touched: {},
@@ -88,13 +88,22 @@ export default {
             const errorsIsEmpty = !Object.values(this.errors).some((v) => v);
             if (errorsIsEmpty) {
                 const options = [
-                    this.vt.option1,
-                    this.vt.option2,
-                    this.vt.option3 || "",
-                ].filter((o) => o && o.trim() !== "");
+                    {
+                        option: this.vt.option1,
+                        count: 0,
+                    },
+                    {
+                        option: this.vt.option2,
+                        count: 0,
+                    },
+                    {
+                        option: this.vt.option3 || "",
+                        count: 0,
+                    },
+                ].filter((o) => o && o.option.trim() !== "");
                 this.$emit("update", {
                     statement: this.vt.statement,
-                    options,
+                    options: options,
                 });
             }
         },

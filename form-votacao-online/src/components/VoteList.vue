@@ -7,11 +7,11 @@
             <button class="edit" @click="editVote(i)">Editar</button> {{ " " }}
             <button class="remove" @click="removeVote(i)">Remover</button>
             {{ " " }}
-            <button class="use" @click="useVote(vote, i)">Usar</button>
+            <button class="use" @click="useVote(i)">Usar</button>
             <br />
             <b>Opções: </b> <br />
             <span v-for="(o, i) in vote.options" :key="i">
-                {{ o }}
+                {{ o.option }}
                 <span v-if="i < vote.options.length - 1">/ </span>
             </span>
         </p>
@@ -25,8 +25,8 @@
     </div>
     <div v-if="mode === 'use'">
         <CardVotacao
-            :pergunta="votes[current].statement"
-            :opcoes="options"
+            :statement="votes[current].statement"
+            :options="votes[current].options"
             @back="cancelChanges"
         />
     </div>
@@ -48,7 +48,6 @@ export default {
     setup() {
         const mode = ref("view");
         const current = ref(0);
-        const options = ref([]);
         const addVote = () => {
             createVote();
             mode.value = "add";
@@ -61,25 +60,25 @@ export default {
         };
 
         const updateChanges = (vote) => {
+            console.log(vote);
             updateVote(vote, current.value);
+            console.log(votes);
             mode.value = "view";
         };
 
-        const cancelChanges = () => {
+        const cancelChanges = (vote) => {
             if (mode.value === "add") {
                 removeVote(current.value);
+            }
+            if (mode.value === "use") {
+                updateVote(vote, current.value);
+                console.log(vote);
             }
             mode.value = "view";
         };
 
-        const useVote = (vote, index) => {
-            options.value = [];
-            vote.options.forEach((o) => {
-                options.value.push({
-                    option: o,
-                    count: 0,
-                });
-            });
+        const useVote = (index) => {
+            votes[current];
             current.value = index;
             mode.value = "use";
         };
@@ -94,7 +93,6 @@ export default {
             cancelChanges,
             updateChanges,
             useVote,
-            options,
         };
     },
 };

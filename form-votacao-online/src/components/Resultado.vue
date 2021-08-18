@@ -1,8 +1,8 @@
 <template>
     <div class="result">
-        <p v-for="(option, index) in opcoes" :key="option">
+        <p v-for="(option, index) in options" :key="option">
             {{ index + 1 }}. {{ option.option }} - {{ option.count }} votos ({{
-                parseInt((option.count / totalCount) * 100)
+                parseInt((option.count / getTotalVotes) * 100)
             }}%)
         </p>
     </div>
@@ -10,7 +10,21 @@
 
 <script>
 export default {
-    props: ["opcoes", "totalCount"],
+    props: ["options"],
+    data() {
+        return {
+            newOptions: this.options,
+        };
+    },
+    methods: {
+        getTotalVotes() {
+            let totalVotes = 0;
+            this.options.forEach((option) => {
+                totalVotes += option.count;
+            });
+            return totalVotes;
+        },
+    },
 };
 </script>
 
