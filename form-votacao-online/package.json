@@ -9,7 +9,8 @@
     "test": "ng test",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "yarn docs:json && start-storybook -p 6006",
-    "build-storybook": "yarn docs:json && build-storybook"
+    "build-storybook": "yarn docs:json && build-storybook",
+    "chromatic": "npx chromatic --project-token 1d3b207009a8"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,7 @@
     "@types/node": "^12.11.1",
     "@webcomponents/custom-elements": "^1.5.0",
     "babel-loader": "^8.2.2",
+    "chromatic": "^5.9.2",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

@@ -1,10 +1,21 @@
 import { Story, Meta } from '@storybook/angular/types-6-0';
 import { VoteFormComponent } from 'src/app/vote-form/vote-form.component';
-
+import { moduleMetadata } from '@storybook/angular';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 export default {
     title: 'Votacao/VoteForm',
     component: VoteFormComponent,
+    decorators: [
+        moduleMetadata({
+            declarations: [
+                VoteFormComponent,
+            ],
+            imports: [CommonModule, FormsModule],
+        }),
+    ],
+
     argTypes: {
         color: { control: 'color' },
     },

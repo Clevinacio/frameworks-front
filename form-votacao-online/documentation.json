@@ -237,7 +237,7 @@
         },
         {
             "name": "CardVotacaoComponent",
-            "id": "component-CardVotacaoComponent-72a6e1021e3d6de0c20c841f697ac60e",
+            "id": "component-CardVotacaoComponent-b43759bea7026935f958f4d62a7e8070",
             "file": "src/app/card-votacao/card-votacao.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -269,7 +269,16 @@
                     "type": "string"
                 }
             ],
-            "outputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "back",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [
                 {
                     "name": "localOptions",
@@ -279,7 +288,7 @@
                     "type": "OptionsType[]",
                     "optional": false,
                     "description": "",
-                    "line": 20
+                    "line": 21
                 },
                 {
                     "name": "mode",
@@ -289,7 +298,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 21
+                    "line": 22
                 },
                 {
                     "name": "voteService",
@@ -298,7 +307,7 @@
                     "type": "VoteService",
                     "optional": false,
                     "description": "",
-                    "line": 23,
+                    "line": 24,
                     "modifierKind": [
                         122
                     ]
@@ -311,7 +320,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 25,
+                    "line": 26,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -361,11 +370,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { VoteService } from '../vote-service.service';\r\n\r\ntype OptionsType = {\r\n    option: string,\r\n    count: number\r\n}\r\n\r\n@Component({\r\n    selector: 'card-votacao',\r\n    templateUrl: './card-votacao.component.html',\r\n    styleUrls: ['./card-votacao.component.scss']\r\n})\r\nexport class CardVotacaoComponent implements OnInit {\r\n    @Input()\r\n    statement!: string\r\n    @Input()\r\n    options!: OptionsType[]\r\n\r\n    localOptions: OptionsType[] = [];\r\n    mode: string = 'open';\r\n\r\n    constructor(public voteService: VoteService) { }\r\n\r\n    ngOnInit() {\r\n        console.log(this.options);\r\n        this.localOptions = this.options;\r\n    }\r\n\r\n\r\n    vote(index: number) {\r\n        this.localOptions[index].count += 1;\r\n    }\r\n\r\n    showResult() {\r\n        this.mode = 'closed';\r\n    }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\r\nimport { VoteService } from '../vote-service.service';\r\n\r\ntype OptionsType = {\r\n    option: string,\r\n    count: number\r\n}\r\n\r\n@Component({\r\n    selector: 'card-votacao',\r\n    templateUrl: './card-votacao.component.html',\r\n    styleUrls: ['./card-votacao.component.scss']\r\n})\r\nexport class CardVotacaoComponent implements OnInit {\r\n    @Input()\r\n    statement!: string\r\n    @Input()\r\n    options!: OptionsType[]\r\n    @Output() back = new EventEmitter();\r\n\r\n    localOptions: OptionsType[] = [];\r\n    mode: string = 'open';\r\n\r\n    constructor(public voteService: VoteService) { }\r\n\r\n    ngOnInit() {\r\n        this.localOptions = this.options;\r\n    }\r\n\r\n\r\n    vote(index: number) {\r\n        this.localOptions[index].count += 1;\r\n    }\r\n\r\n    showResult() {\r\n        this.mode = 'closed';\r\n    }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".container{\r\n  margin: 100px auto;\r\n  \r\n  background:rgb(221, 150, 150);\r\n  display: flex;\r\n  flex-direction: column;\r\n  max-width: 400px;\r\n  height: 40vh;\r\n  border-radius: 8px;\r\n  box-shadow: 1 3px 12px rgba(0, 0, 0, 0.233);\r\n\r\n}\r\n\r\n.question{\r\n  display: flex;\r\n  text-align: center;\r\n\r\n  h2{\r\n    font-family: 'Poppins', sans-serif;\r\n    font-weight: 700;\r\n    width: 100%;\r\n    color: rgb(242, 248, 250);\r\n    margin: 20px;\r\n    align-self: center;\r\n  }\r\n}\r\n\r\n// .content{\r\n//   display: flex;\r\n//   flex-direction: column;\r\n//   width: 100%;\r\n//   margin: 0 auto;\r\n//   align-self: center;\r\n//   justify-content: center;\r\n// }",
+                    "data": ".container{\r\n  margin: 100px auto;\r\n  \r\n  background:rgb(221, 150, 150);\r\n  display: flex;\r\n  flex-direction: column;\r\n  max-width: 400px;\r\n  height: 40vh;\r\n  border-radius: 8px;\r\n  box-shadow: 1 3px 12px rgba(0, 0, 0, 0.233);\r\n\r\n}\r\n\r\n.question{\r\n  display: flex;\r\n  text-align: center;\r\n\r\n  h2{\r\n    font-family: 'Poppins', sans-serif;\r\n    font-weight: 700;\r\n    width: 100%;\r\n    color: rgb(242, 248, 250);\r\n    margin: 20px;\r\n    align-self: center;\r\n  }\r\n}\r\n\r\n.button{\r\n    max-width: 120px;\r\n    height: 30px;\r\n    padding: 0px 30px;\r\n    margin-left: 5px;\r\n    margin-right: 5px;\r\n    color: rgb(234, 246, 255);\r\n    background: rgb(184, 38, 38);\r\n    border: 0;\r\n    border-radius: 8px;\r\n    cursor: pointer;\r\n    margin: 0 auto;\r\n    transition: filter 0.2s;\r\n  \r\n    &:hover{\r\n      filter: brightness(0.9);\r\n    }\r\n}",
                     "styleUrl": "./card-votacao.component.scss"
                 }
             ],
@@ -383,7 +392,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 21,
+                "line": 22,
                 "jsdoctags": [
                     {
                         "name": "voteService",
@@ -399,7 +408,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"container\">\r\n    <div class=\"question\">\r\n        <h2>{{statement}}</h2>\r\n    </div>\r\n    <div *ngIf=\"mode === 'open'\">\r\n        <cabine [options]=\"localOptions\" (click)=\"vote($event); showResult()\">\r\n        </cabine>\r\n    </div>\r\n    <div *ngIf=\"mode !== 'open'\">\r\n        <resultado *ngIf=\"localOptions\" [voteOptions]=\"localOptions\"></resultado>\r\n    </div>\r\n</div>"
+            "templateData": "<div class=\"container\">\r\n    <div class=\"question\">\r\n        <h2>{{statement}}</h2>\r\n    </div>\r\n    <div *ngIf=\"mode === 'open'\">\r\n        <cabine [options]=\"localOptions\" (click)=\"vote($event); showResult()\">\r\n        </cabine>\r\n    </div>\r\n    <div *ngIf=\"mode !== 'open'\">\r\n        <resultado *ngIf=\"localOptions\" [voteOptions]=\"localOptions\"></resultado>\r\n    </div>\r\n    <button class=\"button\" (click)=\"back.emit()\">Voltar</button>\r\n</div>"
         },
         {
             "name": "ResultadoComponent",
@@ -486,7 +495,7 @@
         },
         {
             "name": "VoteFormComponent",
-            "id": "component-VoteFormComponent-b08c53635d6d16ff3b8070da5b635d8d",
+            "id": "component-VoteFormComponent-63622e5d63fbaaee24b884836bedc387",
             "file": "src/app/vote-form/vote-form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -587,7 +596,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';\r\n\r\ntype OptionsType = {\r\n    option: string,\r\n    count: number\r\n}\r\n\r\ntype VoteType = {\r\n    statement: string,\r\n    options: OptionsType[]\r\n};\r\n\r\ntype DataVoteType = {\r\n    statement: string,\r\n    voteOption1: string,\r\n    voteOption2: string,\r\n    voteOption3: string,\r\n}\r\n\r\n@Component({\r\n    selector: 'vote-form',\r\n    templateUrl: './vote-form.component.html',\r\n    styleUrls: ['./vote-form.component.scss']\r\n})\r\nexport class VoteFormComponent implements OnInit {\r\n    @Input() vote!: VoteType;\r\n    @Output() cancel = new EventEmitter();\r\n    @Output() update = new EventEmitter();\r\n    vt: DataVoteType;\r\n\r\n    constructor() {\r\n        this.vt = {} as DataVoteType;\r\n    }\r\n\r\n    ngOnInit() {\r\n        const { statement, options } = this.vote || {};\r\n        const [option1, option2, option3] = options || [];\r\n        this.vt = {\r\n            statement: statement,\r\n            voteOption1: option1.option,\r\n            voteOption2: option2.option,\r\n            voteOption3: option3.option,\r\n        };\r\n    }\r\n\r\n    onSubmit(e: Event) {\r\n        var form = document.getElementsByClassName('needs-validation')[0] as HTMLFormElement;\r\n        if (form.checkValidity() === false) {\r\n            e.preventDefault();\r\n            e.stopPropagation();\r\n        } else {\r\n            const options = [\r\n                {\r\n                    option: this.vt.voteOption1,\r\n                    count: 0\r\n                },\r\n                {\r\n                    option: this.vt.voteOption2,\r\n                    count: 0\r\n                },\r\n                {\r\n                    option: this.vt.voteOption3,\r\n                    count: 0\r\n                }\r\n            ].filter((o) => o.option !== '');\r\n            this.update.emit({\r\n                statement: this.vt.statement,\r\n                options\r\n            });\r\n        }\r\n        form.classList.add('was-validated');\r\n    }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';\r\n\r\ntype OptionsType = {\r\n    option: string,\r\n    count: number\r\n}\r\n\r\ntype VoteType = {\r\n    statement: string,\r\n    options: OptionsType[]\r\n};\r\n\r\ntype DataVoteType = {\r\n    statement: string,\r\n    voteOption1: string,\r\n    voteOption2: string,\r\n    voteOption3: string,\r\n}\r\n\r\n@Component({\r\n    selector: 'vote-form',\r\n    templateUrl: './vote-form.component.html',\r\n    styleUrls: ['./vote-form.component.scss']\r\n})\r\nexport class VoteFormComponent implements OnInit {\r\n    @Input() vote!: VoteType;\r\n    @Output() cancel = new EventEmitter();\r\n    @Output() update = new EventEmitter();\r\n    vt: DataVoteType;\r\n\r\n    constructor() {\r\n        this.vt = {} as DataVoteType;\r\n    }\r\n\r\n    ngOnInit() {\r\n        const { statement, options } = this.vote || {};\r\n        const [option1, option2, option3] = options || [];\r\n        this.vt = {\r\n            statement: statement || '',\r\n            voteOption1: option1.option || '',\r\n            voteOption2: option2.option || '',\r\n            voteOption3: option3?.option || '',\r\n        };\r\n    }\r\n\r\n    onSubmit(e: Event) {\r\n        var form = document.getElementsByClassName('needs-validation')[0] as HTMLFormElement;\r\n        if (form.checkValidity() === false) {\r\n            e.preventDefault();\r\n            e.stopPropagation();\r\n        } else {\r\n            const options = [\r\n                {\r\n                    option: this.vt.voteOption1,\r\n                    count: 0\r\n                },\r\n                {\r\n                    option: this.vt.voteOption2,\r\n                    count: 0\r\n                },\r\n                {\r\n                    option: this.vt.voteOption3 || '',\r\n                    count: 0\r\n                }\r\n            ].filter((o) => o && o.option.trim() !== '');\r\n            this.update.emit({\r\n                statement: this.vt.statement,\r\n                options\r\n            });\r\n        }\r\n        form.classList.add('was-validated');\r\n    }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -839,7 +848,7 @@
                     }
                 ]
             },
-            "templateData": "<div *ngIf=\"mode === 'view'\" class=\"row justifiy-conten\">\r\n    <div class=\"col-4\">\r\n        <h2>Votações</h2>\r\n    </div>\r\n    <div class=\"w-100 d-none d-md-block\"></div>\r\n    <div class=\"col-4\">\r\n        <button class=\"btn btn-primary\" (click)=\"addVote()\">Nova votação</button>\r\n    </div>\r\n    <div class=\"w-100 d-none d-md-block\"></div>\r\n    <div class=\"col-6\">\r\n        <p *ngFor=\"let vote of voteService.votes; index as i\">\r\n            <span><b>Enunciado da votação:</b> {{vote.statement}} - </span>\r\n            <button class=\"btn btn-warning\" (click)=\"editVote(i)\">Editar</button>{{' '}}\r\n            <button class=\"btn btn-danger\" (click)=\"removeVote(i)\">Remover</button>{{' '}}\r\n            <button class=\"btn btn-success\" (click)=\"showVote(i)\">Usar</button>\r\n            <br>\r\n            <b>Opções: </b>\r\n            <span *ngFor=\"let o of vote.options; index as i\">\r\n                {{ o.option }}\r\n                <span *ngIf=\"i < vote.options.length - 1\">/ </span>\r\n            </span>\r\n        </p>\r\n    </div>\r\n</div>\r\n<div *ngIf=\"mode === 'show'\">\r\n    <card-votacao [statement]=\"voteService.votes[current].statement\" [options]=\"voteService.votes[current].options\">\r\n    </card-votacao>\r\n</div>\r\n<div *ngIf=\"mode !== 'view' && mode !== 'show'\" class=\"row\">\r\n    <div class=\"col-2\">\r\n        <h2>Formulário</h2>\r\n    </div>\r\n    <div class=\"w-100 d-none d-md-block\"></div>\r\n    <div class=\"col-5\">\r\n        <vote-form [vote]=\"voteService.votes[current]\" (update)=\"updateChanges($event)\" (cancel)=\"cancelChanges()\">\r\n        </vote-form>\r\n    </div>\r\n</div>"
+            "templateData": "<div *ngIf=\"mode === 'view'\" class=\"row justifiy-conten\">\r\n    <div class=\"col-4\">\r\n        <h2>Votações</h2>\r\n    </div>\r\n    <div class=\"w-100 d-none d-md-block\"></div>\r\n    <div class=\"col-4\">\r\n        <button class=\"btn btn-primary\" (click)=\"addVote()\">Nova votação</button>\r\n    </div>\r\n    <div class=\"w-100 d-none d-md-block\"></div>\r\n    <div class=\"col-6\">\r\n        <p *ngFor=\"let vote of voteService.votes; index as i\">\r\n            <span><b>Enunciado da votação:</b> {{vote.statement}} - </span>\r\n            <button class=\"btn btn-warning\" (click)=\"editVote(i)\">Editar</button>{{' '}}\r\n            <button class=\"btn btn-danger\" (click)=\"removeVote(i)\">Remover</button>{{' '}}\r\n            <button class=\"btn btn-success\" (click)=\"showVote(i)\">Usar</button>\r\n            <br>\r\n            <b>Opções: </b>\r\n            <span *ngFor=\"let o of vote.options; index as i\">\r\n                {{ o.option }}\r\n                <span *ngIf=\"i < vote.options.length - 1\">/ </span>\r\n            </span>\r\n        </p>\r\n    </div>\r\n</div>\r\n<div *ngIf=\"mode === 'show'\">\r\n    <card-votacao [statement]=\"voteService.votes[current].statement\" [options]=\"voteService.votes[current].options\"\r\n        (back)=\"cancelChanges()\">\r\n    </card-votacao>\r\n</div>\r\n<div *ngIf=\"mode !== 'view' && mode !== 'show'\" class=\"row\">\r\n    <div class=\"col-2\">\r\n        <h2>Formulário</h2>\r\n    </div>\r\n    <div class=\"w-100 d-none d-md-block\"></div>\r\n    <div class=\"col-5\">\r\n        <vote-form [vote]=\"voteService.votes[current]\" (update)=\"updateChanges($event)\" (cancel)=\"cancelChanges()\">\r\n        </vote-form>\r\n    </div>\r\n</div>"
         }
     ],
     "modules": [
@@ -936,6 +945,46 @@
                 "defaultValue": "{\r\n  production: false\r\n}"
             },
             {
+                "name": "Form1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/FormVote.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Form2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/FormVote.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Form3",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/FormVote.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FormDemo",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/VoteList.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -948,31 +997,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Resultado.stories.ts",
+                "file": "src/stories/FormVote.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ResultadoComponent>",
-                "defaultValue": "(args: ResultadoComponent) => ({\r\n    props: args,\r\n})"
+                "type": "Story<VoteFormComponent>",
+                "defaultValue": "(args: VoteFormComponent) => ({\r\n    props: args,\r\n})"
             },
             {
-                "name": "Votacao1",
+                "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Resultado.stories.ts",
+                "file": "src/stories/VoteList.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Votacao2",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Resultado.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story<VoteListComponent>",
+                "defaultValue": "(args: VoteListComponent) => ({\r\n    props: args,\r\n})"
             }
         ],
         "functions": [],
@@ -1037,7 +1076,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "literal type",
-                "file": "src/app/vote-list/vote-list.component.ts",
+                "file": "src/app/vote-form/vote-form.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1048,7 +1087,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "literal type",
-                "file": "src/app/vote-form/vote-form.component.ts",
+                "file": "src/app/vote-list/vote-list.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1070,7 +1109,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "literal type",
-                "file": "src/app/vote-list/vote-list.component.ts",
+                "file": "src/app/vote-form/vote-form.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1081,7 +1120,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "literal type",
-                "file": "src/app/vote-form/vote-form.component.ts",
+                "file": "src/app/vote-list/vote-list.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1135,36 +1174,68 @@
                     "defaultValue": "{\r\n  production: false\r\n}"
                 }
             ],
-            "src/stories/Resultado.stories.ts": [
+            "src/stories/FormVote.stories.ts": [
+                {
+                    "name": "Form1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/FormVote.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Form2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/FormVote.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Form3",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/FormVote.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
                 {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Resultado.stories.ts",
+                    "file": "src/stories/FormVote.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<ResultadoComponent>",
-                    "defaultValue": "(args: ResultadoComponent) => ({\r\n    props: args,\r\n})"
-                },
+                    "type": "Story<VoteFormComponent>",
+                    "defaultValue": "(args: VoteFormComponent) => ({\r\n    props: args,\r\n})"
+                }
+            ],
+            "src/stories/VoteList.stories.ts": [
                 {
-                    "name": "Votacao1",
+                    "name": "FormDemo",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Resultado.stories.ts",
+                    "file": "src/stories/VoteList.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Votacao2",
+                    "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Resultado.stories.ts",
+                    "file": "src/stories/VoteList.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "type": "Story<VoteListComponent>",
+                    "defaultValue": "(args: VoteListComponent) => ({\r\n    props: args,\r\n})"
                 }
             ]
         },
@@ -1324,7 +1395,7 @@
                 "linktype": "component",
                 "name": "CardVotacaoComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/10",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
@@ -1384,7 +1455,37 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Resultado.stories.ts",
+                "filePath": "src/stories/FormVote.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Form1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/FormVote.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Form2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/FormVote.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Form3",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/FormVote.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1394,30 +1495,30 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Resultado.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Votacao1",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Resultado.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Votacao2",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/stories/User.ts",
                 "type": "interface",
                 "linktype": "interface",
                 "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/VoteList.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FormDemo",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/VoteList.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
