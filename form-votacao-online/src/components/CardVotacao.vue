@@ -12,6 +12,7 @@
         <div v-else>
             <Resultado :opcoes="opcoes" :totalCount="getTotalVotos"></Resultado>
         </div>
+        <button class="button" @click="$emit('back')">Voltar</button>
     </div>
 </template>
 <script>
@@ -96,6 +97,25 @@ export default {
         width: 100%;
         color: #2c3e50;
         align-self: center;
+    }
+}
+
+.button {
+    max-width: 120px;
+    height: 30px;
+    padding: 0px 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(234, 246, 255);
+    background: rgb(22, 110, 62);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(0.9);
     }
 }
 </style>

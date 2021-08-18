@@ -24,7 +24,11 @@
         ></VoteForm>
     </div>
     <div v-if="mode === 'use'">
-        <CardVotacao :pergunta="votes[current].statement" :opcoes="options" />
+        <CardVotacao
+            :pergunta="votes[current].statement"
+            :opcoes="options"
+            @back="cancelChanges"
+        />
     </div>
 </template>
 
@@ -69,8 +73,8 @@ export default {
         };
 
         const useVote = (vote, index) => {
+            options.value = [];
             vote.options.forEach((o) => {
-                console.log(o);
                 options.value.push({
                     option: o,
                     count: 0,
