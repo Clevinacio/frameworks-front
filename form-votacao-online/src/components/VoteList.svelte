@@ -27,13 +27,7 @@
 
     function showVote(index) {
         current = index;
-        options = [];
-        $vtList[current].options.forEach((o) => {
-            options.push({
-                option: o,
-                count: 0,
-            });
-        });
+        console.log($vtList[index]);
         mode = "show";
     }
 
@@ -42,7 +36,14 @@
         mode = "view";
     }
 
-    function cancelChanges() {
+    function cancelChanges({ detail }) {
+        console.log(detail);
+        if (mode === "add") {
+            removeVote($vtList.length - 1);
+        }
+        if (mode === "show") {
+            vtList.change(detail, current);
+        }
         mode = "view";
     }
 </script>
@@ -72,7 +73,7 @@
                     <b>Opções: </b>
                     {#each vote.options as o, i}
                         <span>
-                            {o}
+                            {o.option}
                             {#if i < vote.options.length - 1}
                                 <span>/ </span>
                             {/if}
@@ -84,8 +85,8 @@
     {:else if mode === "show"}
         <CardVotacao
             statement={$vtList[current].statement}
-            {options}
-            on:back={cancelChanges}
+            options={$vtList[current].options}
+            on:back={(e) => cancelChanges(e)}
         />
     {:else}
         <div class="containerForm">

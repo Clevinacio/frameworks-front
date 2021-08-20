@@ -2,8 +2,8 @@
     export let options;
     export let color = "#fff";
 
-    let totalVotos = 0;
     function total() {
+        let totalVotos = 0;
         options.forEach((option) => {
             totalVotos += option.count;
         });

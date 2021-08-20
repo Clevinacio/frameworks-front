@@ -35,8 +35,13 @@
         class="button"
         outline
         color="warning"
-        on:click={(e) => dispatch("back")}>Voltar</button
+        on:click={dispatch("back", {
+            statement: statement,
+            options: options,
+        })}
     >
+        Voltar
+    </button>
 </div>
 
 <style lang="scss">

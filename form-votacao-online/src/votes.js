@@ -7,7 +7,11 @@ export function createVoteList() {
 
     function create() {
         const newVt = {
-            statement: '', options: []
+            statement: '', options: [
+                { option: '', count: 0 },
+                { option: '', count: 0 },
+                { option: '', count: 0 },
+            ]
         }
         update((list) => [...list, newVt])
     }

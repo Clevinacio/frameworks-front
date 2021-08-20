@@ -2,6 +2,7 @@
     import { createEventDispatcher } from "svelte";
 
     export let options;
+    console.log(options);
     const dispatch = createEventDispatcher();
 </script>
 

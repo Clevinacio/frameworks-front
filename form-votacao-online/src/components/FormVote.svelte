@@ -14,13 +14,14 @@
     export let vote;
 
     const { statement, options } = vote || {};
-    const [option1, option2, option3] = options || [];
+    const [option1, option2] = options || [];
+    const option3 = options[2] || { option: "", count: 0 };
 
     let values = {
         statement: statement,
-        option1: option1,
-        option2: option2,
-        option3: option3,
+        option1: option1.option,
+        option2: option2.option,
+        option3: option3.option,
     };
 
     let errors = {};
@@ -36,12 +37,21 @@
             .validate(values, { abortEarly: false })
             .then(() => {
                 const fullOptions = [
-                    values.option1,
-                    values.option2,
-                    values.option3,
+                    {
+                        option: values.option1,
+                        count: 0,
+                    },
+                    {
+                        option: values.option2,
+                        count: 0,
+                    },
+                    {
+                        option: values.option3,
+                        count: 0,
+                    },
                 ];
                 const filteredOptions = fullOptions.filter(
-                    (option) => option && option.trim() !== ""
+                    (option) => option && option.option.trim() !== ""
                 );
                 dispatch("update", {
                     statement: values.statement,

@@ -9,14 +9,48 @@
     <FormVote {...args} />
 </Template>
 
-<Story name="FormDemo" />
+<Story
+    name="FormDemo"
+    args={{
+        vote: {
+            statement: "",
+            options: [
+                {
+                    option: "",
+                    count: 0,
+                },
+                {
+                    option: "",
+                    count: 0,
+                },
+                {
+                    option: "",
+                    count: 0,
+                },
+            ],
+        },
+    }}
+/>
 
 <Story
     name="FormDemo2"
     args={{
         vote: {
             statement: "teste",
-            options: ["sim", "não"],
+            options: [
+                {
+                    option: "sim",
+                    count: 0,
+                },
+                {
+                    option: "nao",
+                    count: 0,
+                },
+                {
+                    option: "",
+                    count: 0,
+                },
+            ],
         },
     }}
 />
@@ -26,7 +60,20 @@
     args={{
         vote: {
             statement: "teste",
-            options: ["sim", "não", "não sei"],
+            options: [
+                {
+                    option: "sim",
+                    count: 0,
+                },
+                {
+                    option: "nao",
+                    count: 0,
+                },
+                {
+                    option: "talvez",
+                    count: 0,
+                },
+            ],
         },
     }}
 />
