@@ -20,7 +20,6 @@
 <script>
 import Cabine from "./Cabine";
 import Resultado from "./Resultado";
-import { reactive, ref, toRef, toRefs } from "vue";
 
 export default {
     components: {
@@ -40,15 +39,14 @@ export default {
     data() {
         return {
             newMode: "open",
-            optionsVotacao: this.options,
+            optionsVotacao: [...this.options],
         };
     },
     methods: {
         resultado(index) {
             console.log(this.optionsVotacao);
-            let { count } = toRefs(this.optionsVotacao[index]);
-            count.value++;
-            console.log(count.value);
+            this.optionsVotacao[index].count++;
+            console.log(this.optionsVotacao[index].count);
             this.newMode = "closed";
         },
     },
@@ -93,7 +91,7 @@ export default {
     border: 0;
     border-radius: 8px;
     cursor: pointer;
-
+    margin: 0 auto;
     transition: filter 0.2s;
 
     &:hover {
